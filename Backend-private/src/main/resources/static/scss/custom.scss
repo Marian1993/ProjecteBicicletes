@@ -24,11 +24,17 @@
 
 // colors personalitzats
 $color-perso:(
-        "iesmanacor": grey,
-        "secondary": green,
-        "success": cyan,
-        "info": yellow,
-        "light": white
+        "blau-0": #F0F8FF,
+        "blau-1": #B0E0E6,
+        "blau-2": #ADD8E6,
+        "blau-3": #87CEFA,
+        "blau-4": #87CEEB,
+        "blau-5": #00BFFF,
+        "blau-6": #1E90FF,
+        "blau-7": #6495ED,
+        "blau-8": #4169E1,
+        "blau-9": blue,
+        "blau-10": #00008B
 );
 
 //Merge the maps
@@ -40,3 +46,10 @@ $utilities-text-colors: map-merge($utilities-text-colors, $color-perso);
 
 //importam tot el boostrap
 @import "../../../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+//custom layout
+
+.underline{
+
+  border-bottom: 1px solid grey;
+}
