@@ -1,0 +1,10 @@
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+##S'ha de canviar lo que està entre comilles per el teu nom d'usuari de la teva bbdd, i llevar les comilles
+spring.datasource.url=jdbc:mysql://localhost:3306/"usuari"?useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+
+##Aqui s'ha de posar l'usuari de la teva bbdd
+spring.datasource.username=usuari
+
+## Aqui s'ha de posar la contrasenya de la teva bbdd
+spring.datasource.password=contrasenya
