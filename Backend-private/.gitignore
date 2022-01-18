@@ -36,3 +36,6 @@ build/
 /node
 /node_modules
 .mvn
+
+### credencials bbdd ###
+src/main/resources/application.properties
