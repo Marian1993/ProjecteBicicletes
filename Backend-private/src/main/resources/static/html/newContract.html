@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contracte</title>
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body class="">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="mb-5 mt-4 text-center">Contracte de lloguer</h1>
+                <form>
+                    <div class="row border-bottom border-top border-dark mx-1 pb-5">
+                        <h3 class="mb-5 mt-5 text-center col-12">Dades del client</h3>
+                        <div class="col-12">
+                            <div class="row justify-content-lg-evenly justify-content-center gap-3">
+                                <div class=" col-lg-2 col-4 pb-3">
+                                    <label>Nom:</label></br>
+                                    <input class="pb-1 my-1" type="text" name="nom" required>
+                                </div>
+                                <div class=" col-lg-2 col-4 pb-3">
+                                    <label>Primer llinatge:</label></br>
+                                    <input class="pb-1 my-1" type="text" name="llin1" required>
+                                </div>
+                                <div class=" col-lg-2 col-4 pb-3">
+                                    <label>Segon llinatge:</label></br>
+                                    <input class="pb-1 my-1" type="text" name="llin2">
+                                </div>
+                                <div class="col-lg-2 col-4 pb-3">
+                                    <label>Correu:</label></br>
+                                    <input class="pb-1 my-1" type="email" name="correu" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row justify-content-lg-evenly justify-content-center gap-3">
+                                <div class=" col-lg-2 col-4 pb-3">
+                                    <label>Telèfon:</label></br>
+                                    <input class="pb-1 my-1" type="text" name="telefon" required>
+                                </div>
+                                <div class=" col-lg-2 col-4 pb-3">
+                                    <label>Carrer: </label></br>
+                                    <input class="pb-1 my-1" type="text" name="carrer" required>
+                                </div>
+                                <div class=" col-lg-2 col-4 pb-3">
+                                    <label>Pis: </label></br>
+                                    <input class="pb-1 my-1" type="text" name="pis">
+                                </div>
+                                <div class=" col-lg-2 col-4 pb-3">
+                                    <label>Nº: </label></br>
+                                    <input class="pb-1 my-1" type="text" name="numero" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-evenly border-bottom border-dark mx-1">
+                        <h3 class="mb-5 mt-5 text-center col-12">Dades del lloguer</h3>
+                        <div class="row my-4 gap-3 justify-content-lg-evenly justify-content-center">
+                            <div class=" col-lg-2 col-4">
+                                <label>Data Inici:</label></br>
+                                <input class="pb-1 my-1" type="text" name="nom" requiredq>
+                            </div>
+                            <div class=" col-lg-2 col-4">
+                                <label>Data Fi:</label></br>
+                                <input class="pb-1 my-1" type="text" name="llin1" required>
+                            </div>
+                            <div class=" col-lg-2 col-4">
+                                <label>Hora de recollida:</label></br>
+                                <input class="pb-1 my-1" type="text" name="llin2">
+                            </div>
+                            <div class="col-lg-2 col-4">
+                                <label>Hora de tornada:</label></br>
+                                <input class="pb-1 my-1" type="email" name="correu" required>
+                            </div>
+                        </div>
+                        <div class="row underline py-4 mx-1 gap-4 justify-content-evenly">
+                            <div class="col-xl-2 col-4 p-0">
+                                <select class="form-select form-select-sm border-dark" aria-label="Default select example">
+                                    <option selected disabled>Selecciona bicicleta</option>
+                                    <option value="montanya">Bicicleta de montanya</option>
+                                    <option value="bmx">Bicicleta BMX</option>
+                                    <option value="passeig">Bicicleta de passeig</option>
+                                    <option value="descens">Bicicleta de descens</option>
+                                    <option value="electrica">Bicicleta elèctrica</option>
+                                    <option value="carratera">Bicicleta de carratera</option>
+                                    <option value="nin">Bicicleta de nin</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-2 col-3 p-0">
+                                <select class="form-select form-select-sm border-dark" aria-label="Default select example">
+                                    <option selected disabled>Marca</option>
+                                    <option value="cannondale">Cannondale</option>
+                                    <option value="felt">Felt</option>
+                                    <option value="giant">Giant</option>
+                                    <option value="specialized">Specialized</option>
+                                    <option value="trek">Trek</option>
+                                    <option value="yeti">Yeti</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-1 col-2 p-0">
+                                <select class="form-select form-select-sm border-dark" aria-label="Default select example">
+                                    <option selected disabled>Talla</option>
+                                    <option value="xs">XS</option>
+                                    <option value="s">S</option>
+                                    <option value="m">M</option>
+                                    <option value="l">L</option>
+                                    <option value="xl">XL</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-2 col-3 p-0">
+                                <select class="form-select form-select-sm border-dark" aria-label="Default select example">
+                                    <option selected disabled>Categoria</option>
+                                    <option value="baixa">Gamma Baixa</option>
+                                    <option value="mitja">Gamma Mitja</option>
+                                    <option value="alta">Gamma Alta</option>
+                                </select>
+                            </div>
+                            <div class="col-xl-1 col-2 p-0">
+                                <label>Id:</label>
+                                <input class="text-center pb-1 rounded-1 border-1 w-75" type="number" name="quantitat" value="ABC123" min="0" max="10">
+                            </div>
+                            <div class="col-xl-2 col-4 p-0">
+                                <label>Preu:</label>
+                                <input class="text-center bg-white border-dark rounded-1 border-1 pb-1 w-75" type="text" name="preu" placeholder=" 45,00€" min="0" max="10" disabled>
+                            </div>
+                        </div>
+                        <div class="row py-3 underline text-center mx-1">
+                            <div class="col-12">
+                                <p class="text-black-50  mb-1">Afegir un altre producte</p>
+                                <button type="button" class="border-0 bg-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-lg text-black-50" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="text-end py-3">
+                            <label>Total:</label>
+                            <input class="pb-1 my-1" type="text" name="total" required>
+                        </div>
+                    </div>
+                    <div class="row py-5 justify-content-between px-5">
+                        <p class="col-6 ps-5">Firma Treballador</p>
+                        <p class="col-6 text-end pe-5">Frima Client</p>
+                    </div>
+                    <p class="pt-5 ps-5">Dia <span class="text-decoration-underline"> ____________ </span> del mes <span class="text-decoration-underline border-1">____________________________________</span> de l'any <span class="text-decoration-underline"> ________________</span></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
