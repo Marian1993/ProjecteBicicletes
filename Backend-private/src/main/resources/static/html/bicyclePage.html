@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pàgina Principal</title>
+    <link rel="stylesheet" href="../css/custom.css">
+</head>
+<body class="container-fluid bg-secondary bg-opacity-25">
+    <header class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary py-2">
+            <div class="col-lg-3 col-3 ps-3">
+                <button class="navbar-toggler btn btn-sm border-2 border-dark px-2 me-4 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Inici</a>
+            </div>
+            <div class="collapse navbar-collapse col-9 justify-content-end pe-4" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-lg-0 gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Carreto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productes</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDrop">
+                            <li><a class="dropdown-item" href="#">Bicicletes</a></li>
+                            <li><a class="dropdown-item" href="#">Patinets</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicia sessió</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav ">
+                    <li>
+                        <a class="nav-link text-dark" href="#">Principal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Carreto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-dark dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productes</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Bicicletes</a></li>
+                            <li><a class="dropdown-item" href="#">Patinets</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Inicia sessió</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="row bg-primary bg-opacity-25 border border-dark">
+        <div class="col-5 my-auto d-none d-md-block ps-5">
+            <h3 class="fs-3">Noves bicicletes amb descompte</h3>
+        </div>
+        <div class="col-md-7 col-12 px-0">
+            <div class="col-12 mt-3 mb-5 d-md-none d-md-block">
+                <h2 class="fs-2 text-center">Noves bicicletes amb descompte</h2>
+            </div>
+            <div id="col-12 carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="img-carousel" src="../img/bicicleta-proba.png" class="d-block " alt="..." width="100%" height="350">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-carousel" src="../img/bicicleta-proba2.png" class="d-block" alt="..." width="100%" height="350">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-carousel" src="../img/bicicleta-proba.png" class="d-block" alt="..." width="100%" height="350">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="img-carousel" src="../img/bicicleta-proba2.png" class="d-block" alt="..." width="100%" height="350">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <main class="row justify-content-center gap-5">
+        <div class="col-12 mt-5 ps-5">
+            <h3 class="fs-3 text-center text-decoration-underline">Llista de bicicletes</h3>
+        </div>
+        <article class="col-md-5 col-10 bg-white border border-dark">
+            <div class="row">
+                <div class="col-md-7 col-12">
+                    <img class="mt-2" src="../img/bicicleta-proba2.png" class="d-block" alt="..." width="100%" height="250">
+                </div>
+                <aside class="col-md-5 col-12 pt-3">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 col-5">
+                            <p class="small">Color: Blau</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Talla: M</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Model: Carrera</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Marca: Giant</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Categoria: Mitja</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Disponibilitat: 4</p>
+                        </div>
+                        <div class="col-12">
+                            <p class="text-end small pe-3">45,00€</p>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="col-12 px-3">
+                    <p class="small">Aquesta bicicleta es ideal per practicar per una competicio, ja que pot collir altes velocitats, i te molta restsitencia.</p>
+                </aside>
+            </div>
+        </article>
+        <article class="col-md-5 col-10 bg-white border border-dark">
+            <div class="row">
+                <div class="col-md-7 col-12">
+                    <img class="mt-2" src="../img/bicicleta-proba2.png" class="d-block" alt="..." width="100%" height="250">
+                </div>
+                <aside class="col-md-5 col-12 pt-3">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 col-5">
+                            <p class="small">Color: Blau</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Talla: M</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Model: Carrera</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Marca: Giant</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Categoria: Mitja</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Disponibilitat: 4</p>
+                        </div>
+                        <div class="col-12">
+                            <p class="text-end small pe-3">45,00€</p>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="col-12 px-3">
+                    <p class="small">Aquesta bicicleta es ideal per practicar per una competicio, ja que pot collir altes velocitats, i te molta restsitencia.</p>
+                </aside>
+            </div>
+        </article>
+        <article class="col-md-5 col-10 bg-white border border-dark">
+            <div class="row">
+                <div class="col-md-7 col-12">
+                    <img class="mt-2" src="../img/bicicleta-proba2.png" class="d-block" alt="..." width="100%" height="250">
+                </div>
+                <aside class="col-md-5 col-12 pt-3">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 col-5">
+                            <p class="small">Color: Blau</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Talla: M</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Model: Carrera</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Marca: Giant</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Categoria: Mitja</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Disponibilitat: 4</p>
+                        </div>
+                        <div class="col-12">
+                            <p class="text-end small pe-3">45,00€</p>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="col-12 px-3">
+                    <p class="small">Aquesta bicicleta es ideal per practicar per una competicio, ja que pot collir altes velocitats, i te molta restsitencia.</p>
+                </aside>
+            </div>
+        </article>
+        <article class="col-md-5 col-10 bg-white border border-dark">
+            <div class="row">
+                <div class="col-md-7 col-12">
+                    <img class="mt-2" src="../img/bicicleta-proba2.png" class="d-block" alt="..." width="100%" height="250">
+                </div>
+                <aside class="col-md-5 col-12 pt-3">
+                    <div class="row justify-content-center">
+                        <div class="col-md-12 col-5">
+                            <p class="small">Color: Blau</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Talla: M</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Model: Carrera</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Marca: Giant</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Categoria: Mitja</p>
+                        </div>
+                        <div class="col-md-12 col-5">
+                            <p class="small">Disponibilitat: 4</p>
+                        </div>
+                        <div class="col-12">
+                            <p class="text-end small pe-3">45,00€</p>
+                        </div>
+                    </div>
+                </aside>
+                <aside class="col-12 px-3">
+                    <p class="small">Aquesta bicicleta es ideal per practicar per una competicio, ja que pot collir altes velocitats, i te molta restsitencia.</p>
+                </aside>
+            </div>
+        </article>
+    </main>
+    <footer class="row mt-5 bg-secondary bg-opacity-25">
+        <div class="col-md-4 col-10 mb-4 mt-4">
+            <p class="mb-2 text-decoration-underline">On esteim</p>
+            <p class="small mb-1">Illes Balears</p>
+            <p class="small mb-1">C/Cami de s'es flors nº50, 07550</p>
+            <p class="small mb-1">Tel. Fixo: 971567812</p>
+            <p class="small mb-1">Tel. Movil: 667485213</p>
+            <p class="small mb-1">Email: fanbicis@gmail.com</p>
+        </div>
+        <div class="col-md-4 col-10 mb-4 mt-4">
+            <p class="mb-2 text-decoration-underline">Enllaços d'interes</p>
+            <a class="text-decoration-none text-black" href="https://www.ferrerhotels.com/travellost/rutas-ciclistas-de-mallorca/"><p class="small mb-1">Rutes de mallorca</p></a>
+            <a class="text-decoration-none text-black" href="https://es.wikiloc.com/rutas/descenso-mtb/espana/illes-balears"><p class="small mb-1">Rutes de descens</p></a>
+            <a class="text-decoration-none text-black" href="http://localhost:63342/Backend-private/static/html/index.html?_ijt=n0opdfa6u4d0htjd4edm6l440i&_ij_reload=RELOAD_ON_SAVE"><p class="small mb-1">Quina bici et va millor</p></a>
+            <a class="text-decoration-none text-black" href="https://revista.dgt.es/es/educacion-formacion/reportajes/2021/0930-Normas-ciclistas.shtml"><p class="small mb-1">Normes al volant</p></a>
+            <a class="text-decoration-none text-black" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca"><p class="small mb-1">Gastronomia damunt rodes</p></a>
+        </div>
+        <div class="col-md-3 col-10 mb-4 mt-4">
+            <iframe src="https://www.google.com/maps/place/M-Bike/@39.7175529,3.4608462,16.56z/data=!4m12!1m6!3m5!1s0x0:0xc77c1f26226514ca!2sM-Bike!8m2!3d39.7177778!4d3.4600455!3m4!1s0x0:0xc77c1f26226514ca!8m2!3d39.7177778!4d3.4600455"></iframe>
+        </div>
+    </footer>
+<script src="../js/bootstrap.bundle.js"></script>
+</body>
+</html>
