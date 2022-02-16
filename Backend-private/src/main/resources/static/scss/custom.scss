@@ -34,8 +34,13 @@ $color-perso:(
         "blau-7": #6495ED,
         "blau-8": #4169E1,
         "blau-9": blue,
-        "blau-10": #00008B
+        "blau-10": #00008B,
+        "warning": #FFFF00,
+        "danger": #FF0000,
+        "success": #01DF01
 );
+
+
 
 //Merge the maps
 $theme-colors: map-merge($theme-colors, $color-perso);
