@@ -5,139 +5,224 @@
     <title>Contracte</title>
     <link rel="stylesheet" href="../css/custom.css">
 </head>
-<body class="">
+<body>
+    <header class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark bg-opacity-25 py-2">
+            <div class="col-lg-3 col-12 ps-3">
+                <button class="navbar-toggler btn btn-sm border-2 border-dark px-2 me-4 shadow-none none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="#">Mallorca Bike Tour</a>
+            </div>
+            <div class="collapse navbar-collapse col-9 justify-content-end pe-4" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-lg-0 gap-4">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productes</a>
+                        <ul class="dropdown-menu border-dark" aria-labelledby="navbarDrop">
+                            <li><a class="dropdown-item" href="bicyclePage.html">Bicicletes</a></li>
+                            <li><a class="dropdown-item" href="rollerSkatePage.html">Patinets</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="carreto.html">Carreto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Valoracions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="login.html">Inicia sessió</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="accordion pb-2" id="accordionExample">
+                        <div class="accordion-item border-0">
+                            <p class="accordion-header" id="headingOne">
+                                <button class="collapsed border-0 bg-white p-0 dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Productes
+                                </button>
+                            </p>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <ul class="accordion-body pb-0 pt-1">
+                                    <li class="pb-1"><a class="text-black text-decoration-none" href="bicyclePage.html">Bicicletes</a></li>
+                                    <li><a class="text-black text-decoration-none" href="rollerSkatePage.html">Patinets</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="carreto.html">Carreto</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" href="#">Valoracions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="login.html">Inicia sessió</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <div class="container-fluid">
         <div class="row">
             <div class="col-12">
-                <h1 class="mb-5 mt-4 text-center">Contracte de lloguer</h1>
+                <h1 class="fs-1 my-4 text-center">Contracte de lloguer</h1>
                 <form>
                     <div class="row border-bottom border-top border-dark mx-1 pb-5">
-                        <h3 class="mb-5 mt-5 text-center col-12">Dades del client</h3>
+                        <h2 class="h3 my-5 text-center col-12">Dades del client</h2>
                         <div class="col-12">
-                            <div class="row justify-content-lg-evenly justify-content-center gap-3">
-                                <div class=" col-lg-2 col-4 pb-3">
-                                    <label>Nom:</label></br>
-                                    <input class="pb-1 my-1" type="text" name="nom" required>
+                            <div class="row justify-content-lg-evenly justify-content-center gap-2">
+                                <div class=" col-lg-3 col-5 pb-3">
+                                    <label class="form-label">Nom:</label>
+                                    <input class="pb-1 my-1 form-control form-control-sm bg-white" type="text" name="nom" value="Eustaquia" disabled>
                                 </div>
-                                <div class=" col-lg-2 col-4 pb-3">
-                                    <label>Primer llinatge:</label></br>
-                                    <input class="pb-1 my-1" type="text" name="llin1" required>
+                                <div class=" col-lg-3 col-5 pb-3">
+                                    <label class="form-label">Primer llinatge:</label>
+                                    <input class="pb-1 my-1 form-control form-control-sm bg-white" type="text" name="llin1" value="Linares" disabled>
                                 </div>
-                                <div class=" col-lg-2 col-4 pb-3">
-                                    <label>Segon llinatge:</label></br>
-                                    <input class="pb-1 my-1" type="text" name="llin2">
+                                <div class=" col-lg-3 col-5 pb-3">
+                                    <label class="form-label">Segon llinatge:</label>
+                                    <input class="pb-1 my-1 form-control form-control-sm bg-white" type="text" name="llin2" value="Epicaya" disabled>
                                 </div>
-                                <div class="col-lg-2 col-4 pb-3">
-                                    <label>Correu:</label></br>
-                                    <input class="pb-1 my-1" type="email" name="correu" required>
+                                <div class="col-lg-2 col-5 pb-3">
+                                    <label class="form-label">Telèfon:</label>
+                                    <input class="pb-1 my-1 form-control form-control-sm bg-white" type="email" name="correu" value="eustaquialala@gmail.com" disabled>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="row justify-content-lg-evenly justify-content-center gap-3">
-                                <div class=" col-lg-2 col-4 pb-3">
-                                    <label>Telèfon:</label></br>
-                                    <input class="pb-1 my-1" type="text" name="telefon" required>
+                                <div class=" col-lg-3 col-5 pb-3">
+                                    <label class="form-label">Email</label>
+                                    <input class="pb-1 my-1 form-control form-control-sm bg-white" type="text" name="telefon" value="677589201" disabled>
                                 </div>
-                                <div class=" col-lg-2 col-4 pb-3">
-                                    <label>Carrer: </label></br>
-                                    <input class="pb-1 my-1" type="text" name="carrer" required>
+                                <div class=" col-lg-3 col-5 pb-3">
+                                    <label class="form-label">Carrer: </label>
+                                    <input class="pb-1 my-1 form-control form-control-sm bg-white" type="text" name="carrer" value="Hercules" disabled>
                                 </div>
-                                <div class=" col-lg-2 col-4 pb-3">
-                                    <label>Pis: </label></br>
-                                    <input class="pb-1 my-1" type="text" name="pis">
+                                <div class=" col-lg-3 col-5 pb-3">
+                                    <label class="form-label">Pis: </label>
+                                    <input class="pb-1 my-1 form-control form-control-sm bg-white" type="text" name="pis" value="" disabled>
                                 </div>
-                                <div class=" col-lg-2 col-4 pb-3">
-                                    <label>Nº: </label></br>
-                                    <input class="pb-1 my-1" type="text" name="numero" required>
+                                <div class=" col-lg-2 col-5 pb-3">
+                                    <label class="form-label">Nº: </label>
+                                    <input class="pb-1 my-1 form-control form-control-sm bg-white" type="text" name="numero" value="32a" disabled>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row justify-content-evenly border-bottom border-dark mx-1">
-                        <h3 class="mb-5 mt-5 text-center col-12">Dades del lloguer</h3>
-                        <div class="row my-4 gap-3 justify-content-lg-evenly justify-content-center">
-                            <div class=" col-lg-2 col-4">
-                                <label>Data Inici:</label></br>
-                                <input class="pb-1 my-1" type="text" name="nom" requiredq>
+                        <h2 class="h3 my-5 text-center col-12">Dades del lloguer</h2>
+                        <div class="row mb-5 gap-3 justify-content-lg-evenly justify-content-center separacio">
+                            <div class=" col-lg-2 col-5">
+                                <label class="form-label">Data Inici:</label>
+                                <input class="pb-1 my-1 form-control form-control-sm bg-white" type="text" name="Dini" value="12/04/2022" disabled>
                             </div>
-                            <div class=" col-lg-2 col-4">
-                                <label>Data Fi:</label></br>
-                                <input class="pb-1 my-1" type="text" name="llin1" required>
+                            <div class=" col-lg-2 col-5">
+                                <label class="form-label">Data Fi:</label>
+                                <input class="pb-1 my-1 form-control form-control-sm bg-white" type="text" name="Hini" value="8:00" disabled>
                             </div>
-                            <div class=" col-lg-2 col-4">
-                                <label>Hora de recollida:</label></br>
-                                <input class="pb-1 my-1" type="text" name="llin2">
+                            <div class=" col-lg-2 col-5">
+                                <label class="form-label">Hora de recollida:</label>
+                                <input class="pb-1 my-1 form-control form-control-sm bg-white" type="text" name="Dfi" value="14/04/2022" disabled>
                             </div>
-                            <div class="col-lg-2 col-4">
-                                <label>Hora de tornada:</label></br>
-                                <input class="pb-1 my-1" type="email" name="correu" required>
-                            </div>
-                        </div>
-                        <div class="row underline py-4 mx-1 gap-4 justify-content-evenly">
-                            <div class="col-xl-2 col-4 p-0">
-                                <select class="form-select form-select-sm border-dark" aria-label="Default select example">
-                                    <option selected disabled>Selecciona bicicleta</option>
-                                    <option value="montanya">Bicicleta de montanya</option>
-                                    <option value="bmx">Bicicleta BMX</option>
-                                    <option value="passeig">Bicicleta de passeig</option>
-                                    <option value="descens">Bicicleta de descens</option>
-                                    <option value="electrica">Bicicleta elèctrica</option>
-                                    <option value="carratera">Bicicleta de carratera</option>
-                                    <option value="nin">Bicicleta de nin</option>
-                                </select>
-                            </div>
-                            <div class="col-xl-2 col-3 p-0">
-                                <select class="form-select form-select-sm border-dark" aria-label="Default select example">
-                                    <option selected disabled>Marca</option>
-                                    <option value="cannondale">Cannondale</option>
-                                    <option value="felt">Felt</option>
-                                    <option value="giant">Giant</option>
-                                    <option value="specialized">Specialized</option>
-                                    <option value="trek">Trek</option>
-                                    <option value="yeti">Yeti</option>
-                                </select>
-                            </div>
-                            <div class="col-xl-1 col-2 p-0">
-                                <select class="form-select form-select-sm border-dark" aria-label="Default select example">
-                                    <option selected disabled>Talla</option>
-                                    <option value="xs">XS</option>
-                                    <option value="s">S</option>
-                                    <option value="m">M</option>
-                                    <option value="l">L</option>
-                                    <option value="xl">XL</option>
-                                </select>
-                            </div>
-                            <div class="col-xl-2 col-3 p-0">
-                                <select class="form-select form-select-sm border-dark" aria-label="Default select example">
-                                    <option selected disabled>Categoria</option>
-                                    <option value="baixa">Gamma Baixa</option>
-                                    <option value="mitja">Gamma Mitja</option>
-                                    <option value="alta">Gamma Alta</option>
-                                </select>
-                            </div>
-                            <div class="col-xl-1 col-2 p-0">
-                                <label>Id:</label>
-                                <input class="text-center pb-1 rounded-1 border-1 w-75" type="number" name="quantitat" value="ABC123" min="0" max="10">
-                            </div>
-                            <div class="col-xl-2 col-4 p-0">
-                                <label>Preu:</label>
-                                <input class="text-center bg-white border-dark rounded-1 border-1 pb-1 w-75" type="text" name="preu" placeholder=" 45,00€" min="0" max="10" disabled>
+                            <div class="col-lg-2 col-5">
+                                <label class="form-label">Hora de tornada:</label>
+                                <input class="pb-1 my-1 form-control form-control-sm bg-white" type="email" name="Hfi" value="20:00" disabled>
                             </div>
                         </div>
-                        <div class="row py-3 underline text-center mx-1">
-                            <div class="col-12">
-                                <p class="text-black-50  mb-1">Afegir un altre producte</p>
-                                <button type="button" class="border-0 bg-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-plus-lg text-black-50" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
-                                    </svg>
-                                </button>
+                        <article class="row border-top border-bottom border-1 py-4 mx-1 gap-3 justify-content-between">
+                            <h3 class="h4 my-2 text-center col-12">Producte 1</h3>
+                            <div class="col-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-5 p-0">
+                                        <label  class="form-label">Id:</label>
+                                        <input class="form-control form-control-sm bg-white" type="text" name="quantitat" value="ABC123" disabled>
+                                    </div>
+                                    <div class="col-5 p-0">
+                                        <label class="form-label">Talla:</label>
+                                        <input class="form-control form-control-sm bg-white" type="text" name="quantitat" value="M" disabled>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                            <div class="col-3 p-0">
+                                <label class="form-label">Categoria:</label>
+                                <input class="form-control form-control-sm bg-white" type="text" name="quantitat" value="Bicicleta de passeig" disabled>
+                            </div>
+                            <div class="col-2 p-0">
+                                <label class="form-label">Marca:</label>
+                                <input class="form-control form-control-sm bg-white" type="text" name="quantitat" value="Giant" disabled>
+                            </div>
+                            <div class="col-2 p-0">
+                                <label  class="form-label">Color:</label>
+                                <input class="form-control form-control-sm bg-white" type="text" name="quantitat" value="Blau" disabled>
+                            </div>
+                            <div class="col-3 p-0">
+                                <label class="form-label">Qualitat:</label>
+                                <input class="form-control form-control-sm bg-white" type="text" name="quantitat" value="Gamma mitja" disabled>
+                            </div>
+                            <div class="col-3 p-0">
+                                <label  class="form-label">Preu/H:</label>
+                                <input class="form-control form-control-sm bg-white" type="text" name="preu" value=" 00,00€" disabled>
+                            </div>
+                            <div class="col-2 p-0">
+                                <label  class="form-label">Preu/D:</label>
+                                <input class="form-control form-control-sm bg-white" type="text" name="preu" value=" 40,00€" disabled>
+                            </div>
+                            <div class="col-2 p-0">
+                                <label  class="form-label">Preu:</label>
+                                <input class="form-control form-control-sm bg-white" type="text" name="preu" value=" 45,00€" disabled>
+                            </div>
+                        </article>
+                        <article class="row border-top border-bottom border-1 py-4 mx-1 gap-4 justify-content-between">
+                            <h3 class="h4 my-2 text-center col-12">Producte 2</h3>
+                            <div class="col-3">
+                                <div class="row justify-content-between">
+                                    <div class="col-5 p-0">
+                                        <label  class="form-label">Id:</label>
+                                        <input class="form-control form-control-sm bg-white" type="text" name="quantitat" value="ABC444" disabled>
+                                    </div>
+                                    <div class="col-5 p-0">
+                                        <label class="form-label">Talla:</label>
+                                        <input class="form-control form-control-sm bg-white" type="text" name="quantitat" value="M" disabled>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-3 p-0">
+                                <label class="form-label">Categoria:</label>
+                                <input class="form-control form-control-sm bg-white" type="text" name="quantitat" value="Bicicleta de BMX" disabled>
+                            </div>
+                            <div class="col-2 p-0">
+                                <label class="form-label">Marca:</label>
+                                <input class="form-control form-control-sm bg-white" type="text" name="quantitat" value="Specialized" disabled>
+                            </div>
+                            <div class="col-2 p-0">
+                                <label  class="form-label">Color:</label>
+                                <input class="form-control form-control-sm bg-white" type="text" name="quantitat" value="Negre" disabled>
+                            </div>
+                            <div class="col-3 p-0">
+                                <label class="form-label">Qualitat:</label>
+                                <input class="form-control form-control-sm bg-white" type="text" name="quantitat" value="Gamma mitja" disabled>
+                            </div>
+                            <div class="col-3 p-0">
+                                <label  class="form-label">Preu/H:</label>
+                                <input class="form-control form-control-sm bg-white" type="text" name="preu" value=" 00,00€" disabled>
+                            </div>
+                            <div class="col-2 p-0">
+                                <label  class="form-label">Preu/D:</label>
+                                <input class="form-control form-control-sm bg-white" type="text" name="preu" value=" 40,00€" disabled>
+                            </div>
+                            <div class="col-2 p-0">
+                                <label  class="form-label">Preu:</label>
+                                <input class="form-control form-control-sm bg-white" type="text" name="preu" value=" 55,00€" disabled>
+                            </div>
+                        </article>
                         <div class="text-end py-3">
                             <label>Total:</label>
-                            <input class="pb-1 my-1" type="text" name="total" required>
+                            <input class="py-1 ps-2 bg-white border-1 rounded-1" type="text" value="360,00€" name="total" disabled>
                         </div>
                     </div>
                     <div class="row py-5 justify-content-between px-5">

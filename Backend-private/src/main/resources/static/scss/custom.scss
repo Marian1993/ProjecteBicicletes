@@ -47,9 +47,107 @@ $utilities-text-colors: map-merge($utilities-text-colors, $color-perso);
 //importam tot el boostrap
 @import "../../../../../node_modules/bootstrap/scss/bootstrap.scss";
 
+
+//Tipografia
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+*{
+  font-family: Hind Siliguri;
+}
 //custom layout
 
 .underline{
 
   border-bottom: 1px solid grey;
 }
+
+.fons{
+  background-image: url("../img/fons.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.seleccio:hover{
+  background-color: #EBEBEB !important;
+}
+
+//Mapa
+
+#map{
+  height: 175px;
+  width: 450px;
+
+  @media (max-width: 1200px) {
+    width: 300px;
+  }
+
+  @media (max-width: 768px) {
+    width: 550px;
+  }
+  @media (max-width: 576px) {
+    width: 350px;
+  }
+}
+
+//Contracte lloguer
+
+@media print {
+  .separacio{
+    page-break-after: always;
+  }
+  header{
+    display: none;
+  }
+}
+
+//Carousel arousel
+
+$carousel-transition-duration: 2s;
+
+//Sidebar
+
+
+
+//Estrelles
+
+:root {
+  --color-inactivo: #5f5050;
+  --color-hover: #ffa400;
+}
+.valoracion {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.valoracion button {
+  background-color: initial;
+  border: 0;
+  color: var(--color-inactivo);
+  transition: 1s all;
+}
+.valoracion button:hover {
+  cursor: pointer;
+  color: var(--color-hover);
+  transform: rotate(360deg);
+}
+button:nth-child(1):hover ~ button {
+  color: var(--color-hover);
+  transform: rotate(360deg);
+}
+button:nth-child(2):hover ~ button {
+  color: var(--color-hover);
+  transform: rotate(360deg);
+}
+button:nth-child(3):hover ~ button {
+  color: var(--color-hover);
+  transform: rotate(360deg);
+}
+button:nth-child(4):hover ~ button {
+  color: var(--color-hover);
+  transform: rotate(360deg);
+}
+button:nth-child(5):hover ~ button {
+  color: var(--color-hover);
+  transform: rotate(360deg);
+}
+
