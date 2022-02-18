@@ -11,24 +11,8 @@ function changeClass(btn) {
     togg = !togg;
 }
 
-var sliderBicicleta = document.getElementById("QuantitatBicicleta");
-var outputBicicleta = document.getElementById("ValorQuantitatBicicleta");
-outputBicicleta.innerHTML = sliderBicicleta.value;
-
-sliderBicicleta.oninput = function () {
-    outputBicicleta.innerHTML = this.value;
-}
-
-var sliderPatinet = document.getElementById("QuantitatPatinet");
-var outputPatinet = document.getElementById("ValorQuantitatPatinet");
-outputPatinet.innerHTML = sliderPatinet.value;
-
-sliderPatinet.oninput = function () {
-    outputPatinet.innerHTML = this.value;
-}
-
-var sliderModificar = document.getElementById("modificarQuantitat");
-var outputModificar = document.getElementById("modificarValorQuantitat");
+var sliderModificar = document.getElementById("modificarDescompte");
+var outputModificar = document.getElementById("modificarValorDescompte");
 outputModificar.innerHTML = sliderModificar.value;
 
 sliderModificar.oninput = function () {

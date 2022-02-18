@@ -34,7 +34,7 @@
 
 </head>
 
-<body class="pt-2 ">
+<body class="pt-2">
 
 <div class="container mb-4">
     <div class="row">
@@ -184,10 +184,8 @@
                                                            id="PreuBicicleta">
                                                 </div>
                                                 <div class="flex-grow-1 m-1 w-100">
-                                                    <label for="QuantitatBicicleta" class="form-label"><p>Quantitat:
-                                                        <span id="ValorQuantitatBicicleta"></span></p></label>
-                                                    <input type="range" class="form-range" min="1" max="100"
-                                                           id="QuantitatBicicleta" value="1">
+                                                    <label for="QuantitatBicicleta" class="form-label">Quantitat</label>
+                                                    <input type="text" class="form-control" id="QuantitatBicicleta">
 
                                                     <div class="valid-feedback">
                                                         Bé
@@ -311,10 +309,8 @@
                                                            id="PreuPatinet">
                                                 </div>
                                                 <div class="flex-grow-1 m-1 w-100">
-                                                    <label for="QuantitatPatinet" class="form-label"><p>Quantitat:
-                                                        <span id="ValorQuantitatPatinet"></span></p></label>
-                                                    <input type="range" class="form-range" min="1" max="100"
-                                                           id="QuantitatPatinet" value="1">
+                                                    <label for="QuantitatPatinet" class="form-label">Quantitat</label>
+                                                    <input type="text" class="form-control" id="QuantitatPatinet">
 
                                                     <div class="valid-feedback">
                                                         Bé
@@ -358,14 +354,14 @@
                                                 <input type="text" class="form-control" id="modificarPreu" placeholder="€">
                                             </div>
                                             <div class="form-group">
-                                                <label for="modificarDescompte">Descompte:</label>
-                                                <input type="text" class="form-control" id="modificarDescompte" placeholder="%">
+                                                <label for="modificarDescompte" class="form-label"><p>Descompte:
+                                                    <span id="modificarValorDescompte"></span></p></label>
+                                                <input type="range" class="form-range" min="0" max="100"
+                                                       id="modificarDescompte" value="0">
                                             </div>
                                             <div class="form-group">
-                                                <label for="modificarQuantitat" class="form-label"><p>Quantitat:
-                                                    <span id="modificarValorQuantitat"></span></p></label>
-                                                <input type="range" class="form-range" min="1" max="100"
-                                                       id="modificarQuantitat" value="1">
+                                                <label for="modificarQuantitat" class="form-label">Quantitat</label>
+                                                <input type="text" class="form-control" id="modificarQuantitat">
                                             </div>
                                         </form>
                                     </div>
