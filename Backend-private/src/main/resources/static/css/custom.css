@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -18947,6 +18948,98 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  font-family: Hind Siliguri;
+}
+
 .underline {
   border-bottom: 1px solid grey;
+}
+
+.fons {
+  background-image: url("../img/fons.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.seleccio:hover {
+  background-color: #EBEBEB !important;
+}
+
+#map {
+  height: 175px;
+  width: 450px;
+}
+@media (max-width: 1200px) {
+  #map {
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  #map {
+    width: 550px;
+  }
+}
+@media (max-width: 576px) {
+  #map {
+    width: 350px;
+  }
+}
+
+@media print {
+  .separacio {
+    page-break-after: always;
+  }
+
+  header {
+    display: none;
+  }
+}
+:root {
+  --color-inactivo: #5f5050;
+  --color-hover: #ffa400;
+}
+
+.valoracion {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.valoracion button {
+  background-color: initial;
+  border: 0;
+  color: var(--color-inactivo);
+  transition: 1s all;
+}
+
+.valoracion button:hover {
+  cursor: pointer;
+  color: var(--color-hover);
+  transform: rotate(360deg);
+}
+
+button:nth-child(1):hover ~ button {
+  color: var(--color-hover);
+  transform: rotate(360deg);
+}
+
+button:nth-child(2):hover ~ button {
+  color: var(--color-hover);
+  transform: rotate(360deg);
+}
+
+button:nth-child(3):hover ~ button {
+  color: var(--color-hover);
+  transform: rotate(360deg);
+}
+
+button:nth-child(4):hover ~ button {
+  color: var(--color-hover);
+  transform: rotate(360deg);
+}
+
+button:nth-child(5):hover ~ button {
+  color: var(--color-hover);
+  transform: rotate(360deg);
 }

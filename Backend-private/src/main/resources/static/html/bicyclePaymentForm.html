@@ -5,22 +5,88 @@
     <title>Formulari de pagament</title>
     <link rel="stylesheet" href="../css/custom.css">
 </head>
-<body class="bg-primary bg-opacity-25">
+<body class="fons">
+    <header class="row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-2">
+            <div class="col-lg-3 col-12 ps-3">
+                <button class="navbar-toggler btn btn-sm border-2 border-dark px-2 me-4 shadow-none none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <img src="../img/BikeTour250x141.png" width="125px" height="60px">
+                <a class="navbar-brand" href="#">Mallorca Bike Tour</a>
+            </div>
+            <div class="collapse navbar-collapse col-9 justify-content-end pe-4" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-lg-0 gap-4">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Productes</a>
+                        <ul class="dropdown-menu border-dark" aria-labelledby="navbarDrop">
+                            <li><a class="dropdown-item" href="bicyclePage.html">Bicicletes</a></li>
+                            <li><a class="dropdown-item" href="rollerSkatePage.html">Patinets</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="carreto.html">Carreto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Valoracions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="login.html">Inicia sessió</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="accordion pb-2" id="accordionExample">
+                        <div class="accordion-item border-0">
+                            <p class="accordion-header" id="headingOne">
+                                <button class="collapsed border-0 bg-white p-0 dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Productes
+                                </button>
+                            </p>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <ul class="accordion-body pb-0 pt-1">
+                                    <li class="pb-1"><a class="text-black text-decoration-none" href="bicyclePage.html">Bicicletes</a></li>
+                                    <li><a class="text-black text-decoration-none" href="rollerSkatePage.html">Patinets</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="carreto.html">Carreto</a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-dark" href="#">Valoracions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="login.html">Inicia sessió</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <div class="container">
         <div class="row">
             <div class="col-12 mx-auto my-5 p-3 mb-5 shadow bg-white rounded-1">
-                <h2 class="mb-5 mt-4 text-center">Dades del lloguer</h2>
-                <form>
+                <h2 class="mb-5 mt-4 text-center">Formulari de lloguer</h2>
+                <form class="g-3 needs-validation" novalidate>
                     <div class="row my-4 justify-content-center">
                         <div class=" col-lg-3 col-6 text-center">
                             <label for="data-inici">Data Inici: <span class="text-danger">*</span></label><br>
-                            <input class="pb-1 my-2" type="date" name="dataInici" id="data-inici">
+                            <input class="pb-1 my-2" type="date" name="dataInici" id="data-inici" required>
                         </div>
                         <div class=" col-lg-3 col-6">
                             <div class="row justify-content-center text-center g-2">
                                 <label>Hora Recollida: <span class="text-danger">*</span></label>
-                                <div class="col-lg-4 col-3 p-0">
-                                    <select class="form-select form-select-sm" aria-label="Default select example">
+                                <div class="col-lg-4 col-sm-3 col-4 p-0">
+                                    <select class="form-select form-select-sm" aria-label="Default select example" required>
+                                        <option selected disabled value="">00</option>
                                         <option value="8">8</option>
                                         <option value="9">9</option>
                                         <option value="10">10</option>
@@ -40,8 +106,8 @@
                                 <div class="col-1 text-center">
                                     <span>:</span>
                                 </div>
-                                <div class="col-lg-4 col-3 p-0">
-                                    <select class="form-select form-select-sm" aria-label="Default select example">
+                                <div class="col-lg-4 col-sm-3 col-4 p-0">
+                                    <select class="form-select form-select-sm" aria-label="Default select example" required>
                                         <option value="00">00</option>
                                         <option value="30">30</option>
                                     </select>
@@ -50,13 +116,14 @@
                         </div>
                         <div class="col-lg-3 col-6 text-center">
                             <label for="data-fi">Data Fi: <span class="text-danger">*</span></label><br>
-                            <input class="pb-1 my-2" type="date" name="dataInici" id="data-fi">
+                            <input class="pb-1 my-2" type="date" name="dataInici" id="data-fi" required>
                         </div>
                         <div class="col-lg-3 col-6">
                             <div class="row justify-content-center text-center g-2">
                                 <label>Hora Tornada: <span class="text-danger">*</span></label>
-                                <div class="col-lg-4 col-3 p-0">
-                                    <select class="form-select form-select-sm" aria-label="Default select example">
+                                <div class="col-lg-4 col-sm-3 col-4 p-0">
+                                    <select class="form-select form-select-sm" aria-label="Default select example" required>
+                                        <option selected disabled value="">00</option>
                                         <option value="8">8</option>
                                         <option value="9">9</option>
                                         <option value="10">10</option>
@@ -76,8 +143,8 @@
                                 <div class="col-1 text-center">
                                     <span>:</span>
                                 </div>
-                                <div class="col-lg-4 col-3 p-0">
-                                    <select class="form-select form-select-sm" aria-label="Default select example">
+                                <div class="col-lg-4 col-sm-3 col-4 p-0">
+                                    <select class="form-select form-select-sm" aria-label="Default select example" required>
                                         <option value="00">00</option>
                                         <option value="30">30</option>
                                     </select>
@@ -85,11 +152,12 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row underline py-4 mx-1 gap-4 justify-content-evenly">
-                        <div class="col-xl-3 col-4 p-0">
-                            <select class="form-select form-select-sm border-dark" aria-label="Default select example">
-                                <option selected disabled>Selecciona bicicleta</option>
-                                <option value="montanya">Bicicleta de montanya</option>
+                    <article class="row border-top border-bottom border-1 py-4 mx-1 gap-4 justify-content-between">
+                        <div class="col-xl-3 col-sm-4 col-6 p-0">
+                            <label class="form-label">Categoria:</label>
+                            <select class="form-select form-select-sm" aria-label="Default select example" required>
+                                <option selected disabled value="">Selecciona una opció</option>
+                                <option value="montanya">Bicicleta MountainBike</option>
                                 <option value="bmx">Bicicleta BMX</option>
                                 <option value="passeig">Bicicleta de passeig</option>
                                 <option value="descens">Bicicleta de descens</option>
@@ -98,9 +166,10 @@
                                 <option value="nin">Bicicleta de nin</option>
                             </select>
                         </div>
-                        <div class="col-xl-2 col-3 p-0">
-                            <select class="form-select form-select-sm border-dark" aria-label="Default select example">
-                                <option selected disabled>Marca</option>
+                        <div class=" col-xl-3 col-sm-2 col-4 p-0">
+                            <label class="form-label">Marca:</label>
+                            <select class="form-select form-select-sm" aria-label="Default select example" required>
+                                <option selected disabled value="">Selecciona una opció</option>
                                 <option value="cannondale">Cannondale</option>
                                 <option value="felt">Felt</option>
                                 <option value="giant">Giant</option>
@@ -110,8 +179,9 @@
                             </select>
                         </div>
                         <div class="col-xl-1 col-2 p-0">
-                            <select class="form-select form-select-sm border-dark" aria-label="Default select example">
-                                <option selected disabled>Talla</option>
+                            <label class="form-label">Talla:</label>
+                            <select class="form-select form-select-sm" aria-label="Default select example" required>
+                                <option selected disabled value="">Selecciona una opció</option>
                                 <option value="xs">XS</option>
                                 <option value="s">S</option>
                                 <option value="m">M</option>
@@ -119,22 +189,38 @@
                                 <option value="xl">XL</option>
                             </select>
                         </div>
-                        <div class="col-xl-2 col-4 p-0">
-                            <select class="form-select form-select-sm border-dark" aria-label="Default select example">
-                                <option selected disabled>Categoria</option>
+                        <div class="col-xl-3 col-sm-2 col-5 p-0">
+                            <label class="form-label">Qualitat:</label>
+                            <select class="form-select form-select-sm" aria-label="Default select example" required>
+                                <option selected disabled value="">Selecciona una opció</option>
                                 <option value="baixa">Gamma Baixa</option>
                                 <option value="mitja">Gamma Mitja</option>
                                 <option value="alta">Gamma Alta</option>
                             </select>
                         </div>
-                        <div class="col-xl-1 col-2 p-0">
-                            <input class="text-center w-100 pb-1 rounded-1 border-1" type="number" name="quantitat" value="0" min="0" max="10">
+                        <div class="col-sm-2 col-3 p-0">
+                            <label  class="form-label">Color:</label>
+                            <select class="form-select form-select-sm" aria-label="Default select example" required>
+                                <option selected disabled value="">Selecciona una opció</option>
+                                <option value="baixa">Negre</option>
+                                <option value="mitja">Blau</option>
+                                <option value="alta">Verd</option>
+                            </select>
                         </div>
-                        <div class="col-xl-1 col-3 p-0">
-                            <input class="text-center bg-white border-dark rounded-1 border-1 pb-1 w-100" type="text" name="preu" placeholder=" 45,00€" min="0" max="10" disabled>
+                        <div class="col-sm-2 col-3 p-0">
+                            <label  class="form-label">Preu/H:</label>
+                            <input class="form-control form-control-sm bg-white" type="text" name="preu" value=" 00,00€" disabled>
                         </div>
-                    </div>
-                    <div class="row underline py-2 text-center mx-1">
+                        <div class="col-sm-2 col-3 p-0">
+                            <label  class="form-label">Preu/D:</label>
+                            <input class="form-control form-control-sm bg-white" type="text" name="preu" value=" 40,00€" disabled>
+                        </div>
+                        <div class="col-sm-2 col-3 p-0">
+                            <label  class="form-label">Preu:</label>
+                            <input class="form-control form-control-sm bg-white" type="text" name="preu" value=" 55,00€" disabled>
+                        </div>
+                    </article>
+                    <div class="row border-top border-bottom border-1 py-2 text-center mx-1">
                         <div class="col-12">
                             <p class="text-black-50 mb-1">Afegir més bicicletes</p>
                             <button type="button" class="border-0 bg-white">
@@ -144,51 +230,70 @@
                             </button>
                         </div>
                     </div>
-                    <div class="row underline py-4 mx-1 gap-4 justify-content-evenly">
-                        <div class="col-xl-3 col-4 p-0">
-                            <select class="form-select form-select-sm border-dark" aria-label="Default select example">
-                                <option selected disabled>Selecciona patinet</option>
+                    <article class="row border-top border-1 py-4 mx-1 gap-4 justify-content-between">
+                        <div class="col-xl-3 col-sm-4 col-6 p-0">
+                            <label class="form-label">Categoria:</label>
+                            <select class="form-select form-select-sm" aria-label="Default select example" required>
+                                <option selected disabled>Selecciona una opció</option>
                                 <option value="convencional">Patinet convencional</option>
-                                <option value="electric">Patinet elèctric</option>
+                                <option value="electric" selected>Patinet elèctric</option>
                             </select>
                         </div>
-                        <div class="col-xl-2 col-3 p-0">
-                            <select class="form-select form-select-sm border-dark" aria-label="Default select example">
-                                <option selected disabled>Marca</option>
+                        <div class=" col-xl-3 col-sm-2 col-4 p-0">
+                            <label class="form-label">Marca:</label>
+                            <select class="form-select form-select-sm" aria-label="Default select example" required>
+                                <option selected disabled>Selecciona una opció</option>
                                 <option value="razor">Razor</option>
                                 <option value="homcom">HomCom</option>
-                                <option value="xiaomi">Xiaomi</option>
+                                <option value="xiaomi" selected>Xiaomi</option>
                                 <option value="slamm">Slamm</option>
                                 <option value="longway">Longway</option>
                                 <option value="blunt">Blunt</option>
                             </select>
                         </div>
                         <div class="col-xl-1 col-2 p-0">
-                            <select class="form-select form-select-sm border-dark" aria-label="Default select example">
-                                <option selected disabled>Talla</option>
+                            <label class="form-label">Talla:</label>
+                            <select class="form-select form-select-sm" aria-label="Default select example" required>
+                                <option selected disabled>Selecciona una opció</option>
                                 <option value="xs">XS</option>
                                 <option value="s">S</option>
-                                <option value="m">M</option>
+                                <option value="m" selected>M</option>
                                 <option value="l">L</option>
                                 <option value="xl">XL</option>
                             </select>
                         </div>
-                        <div class="col-xl-2 col-4 p-0">
-                            <select class="form-select form-select-sm border-dark" aria-label="Default select example">
-                                <option selected disabled>Categoria</option>
-                                <option value="baixa">Baixa</option>
-                                <option value="mitja">Mitja</option>
-                                <option value="alta">Alta</option>
+                        <div class="col-xl-3 col-sm-2 col-5 p-0">
+                            <label class="form-label">Autonomia:</label>
+                            <select class="form-select form-select-sm" aria-label="Default select example" required>
+                                <option selected disabled>Selecciona una opció</option>
+                                <option value="baixa">18-25 Km</option>
+                                <option value="mitja">25-30 Km</option>
+                                <option value="alta" selected>30-40Km</option>
                             </select>
                         </div>
-                        <div class="col-xl-1 col-2 p-0">
-                            <input class="text-center w-100 pb-1 rounded-1 border-1" type="number"name="quantitat" value="0" min="0" max="10">
+                        <div class="col-sm-2 col-3 p-0">
+                            <label  class="form-label">Color:</label>
+                            <select class="form-select form-select-sm" aria-label="Default select example" required>
+                                <option selected disabled>Selecciona una opció</option>
+                                <option value="baixa">Negre</option>
+                                <option value="mitja" selected>Blau</option>
+                                <option value="alta">Verd</option>
+                            </select>
                         </div>
-                        <div class="col-xl-1 col-3 p-0">
-                            <input class="text-center bg-white border-dark rounded-1 border-1 text-black pb-1 w-100" type="text" name="preu" placeholder=" 45,00€" min="0" max="10" disabled>
+                        <div class="col-sm-2 col-3 p-0">
+                            <label  class="form-label">Preu/H:</label>
+                            <input class="form-control form-control-sm bg-white" type="text" name="preu" value=" 00,00€" disabled>
                         </div>
-                    </div>
-                    <div class="row underline py-2 text-center mx-1">
+                        <div class="col-sm-2 col-3 p-0">
+                            <label  class="form-label">Preu/D:</label>
+                            <input class="form-control form-control-sm bg-white" type="text" name="preu" value=" 40,00€" disabled>
+                        </div>
+                        <div class="col-sm-2 col-3 p-0">
+                            <label  class="form-label">Preu:</label>
+                            <input class="form-control form-control-sm bg-white" type="text" name="preu" value=" 25,00€" disabled>
+                        </div>
+                    </article>
+                    <div class="row border-top border-bottom border-1 py-2 text-center mx-1">
                         <div class="col-12">
                             <p class="text-black-50 mb-1">Afegir més patinets</p>
                             <button type="button" class="border-0 bg-white">
@@ -199,13 +304,33 @@
                         </div>
                     </div>
                     <div class="col-12 mt-5 mb-3 text-end">
-                        <a href="#">
-                            <button type="submit" class="btn btn-primary">Finalitzar</button>
-                        </a>
+                        <button type="submit" class="btn btn-primary">Finalitzar</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script>
+        (function () {
+            'use strict'
+            var forms = document.querySelectorAll('.needs-validation')
+
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+
+                        event.preventDefault()
+                        event.stopPropagation()
+
+                        if (form.checkValidity()) {
+                            window.location.href = "carreto.html";
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
 </body>
 </html>
