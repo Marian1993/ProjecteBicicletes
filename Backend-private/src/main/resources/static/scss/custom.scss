@@ -97,17 +97,6 @@ $utilities-text-colors: map-merge($utilities-text-colors, $color-perso);
   }
 }
 
-//Contracte lloguer
-
-@media print {
-  .separacio{
-    page-break-after: always;
-  }
-  header{
-    display: none;
-  }
-}
-
 //Carousel arousel
 
 $carousel-transition-duration: 2s;

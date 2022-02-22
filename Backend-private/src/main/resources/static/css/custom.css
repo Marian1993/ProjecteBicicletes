@@ -18988,15 +18988,6 @@ textarea.form-control-lg {
   }
 }
 
-@media print {
-  .separacio {
-    page-break-after: always;
-  }
-
-  header {
-    display: none;
-  }
-}
 :root {
   --color-inactivo: #5f5050;
   --color-hover: #ffa400;

@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Patinets</title>
+    <title>Pàgina Bicicletes</title>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
-    <link rel="stylesheet" href="../css/custom.css">
+    <link th:href="@{/css/custom.css}" rel="stylesheet">
 </head>
 <body class="container-fluid bg-white">
     <header class="row">
@@ -330,8 +330,8 @@
             <a class="text-black" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Gastronomia damunt rodes</p></a>
         </div>
     </footer>
-<script src="../js/bootstrap.bundle.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRLXnIEY1UHbKR-j8cOCKYQ3Ouk2NJ7ao&callback=initMap&v=weekly" async></script>
+    <script th:src="@{/js/bootstrap.bundle.js}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRLXnIEY1UHbKR-j8cOCKYQ3Ouk2NJ7ao&callback=initMap&v=weekly" async></script>
 <script>
     let map;
 
