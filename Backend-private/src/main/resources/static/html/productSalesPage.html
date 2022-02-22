@@ -72,9 +72,70 @@
         </div>
     </div>
 </header>
-<main class="row justify-content-lg-center justify-content-around ">
+<main class="row pb-4 justify-content-lg-center justify-content-around">
     <div class="col-12 mt-5 ps-5">
         <h2 class="h2 text-center ">Llista de productes</h2>
+    </div>
+    <div class="col-12 my-5">
+        <div class="row justify-content-around">
+            <div class="col-md-2 col-10 p-0 pb-3">
+                <label class="form-label">Tipus:</label>
+                <select class="form-select form-select-sm" aria-label="Default select example" required>
+                    <option selected disabled value="">Selecciona una opció</option>
+                    <option value="bicicleta">Bicicleta</option>
+                    <option value="patinet">Patinet</option>
+                </select>
+            </div>
+            <div class="col-md-2 col-10 p-0 pb-3">
+                <label class="form-label">Categoria:</label>
+                <select class="form-select form-select-sm" aria-label="Default select example" required>
+                    <option selected disabled value="">Selecciona una opció</option>
+                    <option value="montanya">Bicicleta MountainBike</option>
+                    <option value="bmx">Bicicleta BMX</option>
+                    <option value="passeig">Bicicleta de passeig</option>
+                    <option value="descens">Bicicleta de descens</option>
+                    <option value="electrica">Bicicleta elèctrica</option>
+                    <option value="carratera">Bicicleta de carratera</option>
+                    <option value="nin">Bicicleta de nin</option>
+                </select>
+            </div>
+            <div class="col-md-2 col-10 p-0 pb-3">
+                <label class="form-label">Marca:</label>
+                <select class="form-select form-select-sm" aria-label="Default select example" required>
+                    <option selected disabled value="">Selecciona una opció</option>
+                    <option value="cannondale">Cannondale</option>
+                    <option value="felt">Felt</option>
+                    <option value="giant">Giant</option>
+                    <option value="specialized">Specialized</option>
+                    <option value="trek">Trek</option>
+                    <option value="yeti">Yeti</option>
+                </select>
+            </div>
+            <div class="col-md-3 col-10 p-0 pb-3">
+                <div class="row justify-content-between">
+                    <div class="col-3 p-0">
+                        <label class="form-label">Talla:</label>
+                        <select class="form-select form-select-sm" aria-label="Default select example" required>
+                            <option selected disabled value="">Selecciona una opció</option>
+                            <option value="xs">XS</option>
+                            <option value="s">S</option>
+                            <option value="m">M</option>
+                            <option value="l">L</option>
+                            <option value="xl">XL</option>
+                        </select>
+                    </div>
+                    <div class="col-7 p-0">
+                        <label class="form-label">Qualitat:</label>
+                        <select class="form-select form-select-sm" aria-label="Default select example" required>
+                            <option selected disabled value="">Selecciona una opció</option>
+                            <option value="baixa">Gamma Baixa</option>
+                            <option value="mitja">Gamma Mitja</option>
+                            <option value="alta">Gamma Alta</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <article class="col-lg-3 col-sm-5 col-11 mb-4" >
         <div class="row justify-content-center">
@@ -190,24 +251,33 @@
     </article>
 
 </main>
-<footer class="row mt-5 bg-dark bg-opacity-75 justify-content-around">
+<footer class="row py-3 bg-dark justify-content-around border-bottom border-light border-2">
     <div class="col-md-3 col-12 my-3" id="map"></div>
     <div class="col-md-3 col-5 my-3">
-        <h3 class="h5 mb-1 text-decoration-underline text-black">On esteim</h3>
-        <p class="small mb-1 text-black">Illes Balears</p>
-        <p class="small mb-1 text-black">C/Cami de s'es flors nº50, 07550</p>
-        <p class="small mb-1 text-black">Tel. Fixo: 971567812</p>
-        <p class="small mb-1 text-black">Tel. Movil: 667485213</p>
-        <p class="small mb-1 text-black">Email: fanbicis@gmail.com</p>
+        <h3 class="h5 mb-1 text-decoration-underline text-white">On esteim</h3>
+        <p class="small mb-1 text-white">Illes Balears</p>
+        <p class="small mb-1 text-white">C/Cami de s'es flors nº50, 07550</p>
+        <p class="small mb-1 text-white">Tel. Fixo: 971567812</p>
+        <p class="small mb-1 text-white">Tel. Movil: 667485213</p>
+        <p class="small mb-1 text-white">Email: fanbicis@gmail.com</p>
     </div>
     <div class="col-md-3 col-5 my-3">
-        <h3 class="h5 mb-1 text-decoration-underline text-black">Enllaços d'interes</h3>
-        <a class="text-black" href="https://www.ferrerhotels.com/travellost/rutas-ciclistas-de-mallorca/" target="_blank"><p class="small mb-1">Rutes de mallorca</p></a>
-        <a class="text-black" href="https://es.wikiloc.com/rutas/descenso-mtb/espana/illes-balears" target="_blank"><p class="small mb-1">Rutes de descens</p></a>
-        <a class="text-black" href="http://localhost:63342/Backend-private/static/html/index.html?_ijt=n0opdfa6u4d0htjd4edm6l440i&_ij_reload=RELOAD_ON_SAVE" target="_blank"><p class="small mb-1">Quina bici et va millor</p></a>
-        <a class="text-black" href="https://revista.dgt.es/es/educacion-formacion/reportajes/2021/0930-Normas-ciclistas.shtml" target="_blank"><p class="small mb-1">Normes al volant</p></a>
-        <a class="text-black" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Gastronomia damunt rodes</p></a>
+        <h3 class="h5 mb-1 text-decoration-underline text-white">Enllaços d'interes</h3>
+        <a class="text-white" href="https://www.ferrerhotels.com/travellost/rutas-ciclistas-de-mallorca/" target="_blank"><p class="small mb-1">Rutes de mallorca</p></a>
+        <a class="text-white" href="https://es.wikiloc.com/rutas/descenso-mtb/espana/illes-balears" target="_blank"><p class="small mb-1">Rutes de descens</p></a>
+        <a class="text-white" href="http://localhost:63342/Backend-private/static/html/index.html?_ijt=n0opdfa6u4d0htjd4edm6l440i&_ij_reload=RELOAD_ON_SAVE" target="_blank"><p class="small mb-1">Quina bici et va millor</p></a>
+        <a class="text-white" href="https://revista.dgt.es/es/educacion-formacion/reportajes/2021/0930-Normas-ciclistas.shtml" target="_blank"><p class="small mb-1">Normes al volant</p></a>
+        <a class="text-white" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Gastronomia damunt rodes</p></a>
     </div>
+</footer>
+<footer class="row bg-dark pt-3">
+    <div class="col-12 text-center">
+        <img src="../img/BikeTour250x141.png" width="125px" height="60px">
+    </div>
+    <div class="col-12 text-center">
+        <p class="text-white"> Copyright © 2015-2022 Mallorca Bike Tour</p>
+    </div>
+
 </footer>
 <script src="../js/bootstrap.bundle.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRLXnIEY1UHbKR-j8cOCKYQ3Ouk2NJ7ao&callback=initMap&v=weekly" async></script>
