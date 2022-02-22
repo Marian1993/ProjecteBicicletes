@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Informació de l'Empresa</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/custom.css">
+
+    <style>
+        #adalt {
+            background-image: url('../img/fons.jpg');
+            height: 90vh;
+        }
+
+        h1, h2 {
+            font-family: 'Outfit', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body class="container-fluid">
+<header class="row sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-2 w-100">
+        <div class="col-lg-3 col-12 ps-3">
+            <button class="navbar-toggler btn btn-sm border-2 border-dark px-2 me-4 shadow-none none" type="button"
+                    data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+                    aria-controls="offcanvasWithBackdrop">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="../img/BikeTour250x141.png" width="125px" height="60px">
+            <a class="navbar-brand" href="#">Mallorca Bike Tour</a>
+        </div>
+        <div class="collapse navbar-collapse col-9 justify-content-end pe-4" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-lg-0 gap-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDrop" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Productes</a>
+                    <ul class="dropdown-menu border-dark" aria-labelledby="navbarDrop">
+                        <li><a class="dropdown-item" href="bicyclePage.html">Bicicletes</a></li>
+                        <li><a class="dropdown-item" href="rollerSkatePage.html">Patinets</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="carreto.html">Carreto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Valoracions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="login.html">Inicia sessió</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+         aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="accordion pb-2" id="accordionExample">
+                    <div class="accordion-item border-0">
+                        <p class="accordion-header" id="headingOne">
+                            <button class="collapsed border-0 bg-white p-0 dropdown-toggle" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                                    aria-controls="collapseOne">
+                                Productes
+                            </button>
+                        </p>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                             data-bs-parent="#accordionExample">
+                            <ul class="accordion-body pb-0 pt-1">
+                                <li class="pb-1"><a class="text-black text-decoration-none" href="bicyclePage.html">Bicicletes</a>
+                                </li>
+                                <li><a class="text-black text-decoration-none" href="rollerSkatePage.html">Patinets</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="carreto.html">Carreto</a>
+                </li>
+                <li>
+                    <a class="nav-link text-dark" href="#">Valoracions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="login.html">Inicia sessió</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<div class="row bg-image align-items-center justify-content-center" id="adalt">
+    <h1 class="text-white w-50 bg-dark text-center display-3 rounded">Sobre Bike Tour Mallorca</h1>
+</div>
+
+<div class="row justify-content-center align-items-center">
+
+    <p class="text-left mt-5 w-75">Bike Tour Mallorca és una empresa que fou creada amb l'intenció de
+        proporcionar
+        movilitat.
+    </p>
+    <p class="text-left mt-3 w-75">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+        doloremque laudantium, totam rem
+        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+        enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+        qui ratione voluptatem sequi nesciunt.</p>
+
+    <p class="text-left mt-3 w-75">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+        Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.
+    </p>
+
+</div>
+
+<div class="row justify-content-center align-items-center mt-4">
+
+    <h2 class="w-50 text-center display-6">El nostre equip</h2>
+
+</div>
+
+<div class="row justify-content-center align-items-center mt-4">
+
+    <div class="justify-content-center align-items-center w-50">
+        <img src="../img/user.jpg" alt="" class="rounded-circle img-fluid mx-auto d-block">
+        <p class="text-center mt-2">Sebastià Munar</p>
+    </div>
+
+    <div class="justify-content-center align-items-center w-50">
+        <img src="../img/user.jpg" alt="" class="rounded-circle img-fluid mx-auto d-block">
+        <p class="text-center mt-2">Volkan Moll</p>
+    </div>
+
+    <div class="justify-content-center align-items-center w-50">
+        <img src="../img/user.jpg" alt="" class="rounded-circle img-fluid mx-auto d-block">
+        <p class="text-center mt-2">Maria Antònia Mayol</p>
+    </div>
+
+</div>
+
+
+<footer class="row mt-5 bg-dark bg-opacity-75 justify-content-around">
+    <div class="col-md-3 col-12 my-3" id="map"></div>
+    <div class="col-md-3 col-5 my-3">
+        <h3 class="h5 mb-1 text-decoration-underline text-black">On esteim</h3>
+        <p class="small mb-1 text-black">Illes Balears</p>
+        <p class="small mb-1 text-black">C/Cami de s'es flors nº50, 07550</p>
+        <p class="small mb-1 text-black">Tel. Fixo: 971567812</p>
+        <p class="small mb-1 text-black">Tel. Movil: 667485213</p>
+        <p class="small mb-1 text-black">Email: fanbicis@gmail.com</p>
+    </div>
+    <div class="col-md-3 col-5 my-3">
+        <h3 class="h5 mb-1 text-decoration-underline text-black">Enllaços d'interes</h3>
+        <a class="text-black" href="https://www.ferrerhotels.com/travellost/rutas-ciclistas-de-mallorca/"
+           target="_blank"><p class="small mb-1">Rutes de mallorca</p></a>
+        <a class="text-black" href="https://es.wikiloc.com/rutas/descenso-mtb/espana/illes-balears" target="_blank"><p
+                class="small mb-1">Rutes de descens</p></a>
+        <a class="text-black"
+           href="http://localhost:63342/Backend-private/static/html/index.html?_ijt=n0opdfa6u4d0htjd4edm6l440i&_ij_reload=RELOAD_ON_SAVE"
+           target="_blank"><p class="small mb-1">Quina bici et va millor</p></a>
+        <a class="text-black"
+           href="https://revista.dgt.es/es/educacion-formacion/reportajes/2021/0930-Normas-ciclistas.shtml"
+           target="_blank"><p class="small mb-1">Normes al volant</p></a>
+        <a class="text-black" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca"
+           target="_blank"><p class="small mb-1">Gastronomia damunt rodes</p></a>
+    </div>
+</footer>
+
+<script src="../js/bootstrap.bundle.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRLXnIEY1UHbKR-j8cOCKYQ3Ouk2NJ7ao&callback=initMap&v=weekly"
+        async></script>
+<script>
+    let map;
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: {lat: 39.71358, lng: 3.46076},
+            zoom: 20,
+        });
+    }
+</script>
+</body>
+
+</html>
