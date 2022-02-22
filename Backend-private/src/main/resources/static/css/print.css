@@ -1,0 +1,6 @@
+.separacio{
+    page-break-after: always !important;
+}
+header{
+    display: none !important;
+}
