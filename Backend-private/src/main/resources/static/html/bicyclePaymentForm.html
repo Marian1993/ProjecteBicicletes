@@ -310,6 +310,48 @@
             </div>
         </div>
     </div>
+    <footer class="row py-3 bg-dark justify-content-around border-bottom border-light border-2">
+        <div class="col-md-3 col-12 my-3" id="map"></div>
+        <div class="col-md-3 col-5 my-3">
+            <h3 class="h5 mb-1 text-decoration-underline text-white">Coneixemos</h3>
+            <p class="small mb-1 text-white">Illes Balears</p>
+            <p class="small mb-1 text-white">C/Cami de s'es flors nº50, 07550</p>
+            <p class="small mb-1 text-white">Tel. Fixo: 971567812</p>
+            <p class="small mb-1 text-white">Tel. Movil: 667485213</p>
+            <p class="small mb-1 text-white">Email: fanbicis@gmail.com</p>
+            <a class="text-white text-decoration-none" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Sobre nosaltres</p></a>
+        </div>
+        <div class="col-md-3 col-5 my-3">
+            <h3 class="h5 mb-1 text-decoration-underline text-white">Enllaços d'interes</h3>
+            <a class="text-white" href="https://www.ferrerhotels.com/travellost/rutas-ciclistas-de-mallorca/" target="_blank"><p class="small mb-1">Rutes de mallorca</p></a>
+            <a class="text-white" href="https://es.wikiloc.com/rutas/descenso-mtb/espana/illes-balears" target="_blank"><p class="small mb-1">Rutes de descens</p></a>
+            <a class="text-white" href="http://localhost:63342/Backend-private/static/html/index.html?_ijt=n0opdfa6u4d0htjd4edm6l440i&_ij_reload=RELOAD_ON_SAVE" target="_blank"><p class="small mb-1">Quina bici et va millor</p></a>
+            <a class="text-white" href="https://revista.dgt.es/es/educacion-formacion/reportajes/2021/0930-Normas-ciclistas.shtml" target="_blank"><p class="small mb-1">Normes al volant</p></a>
+            <a class="text-white" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Gastronomia damunt rodes</p></a>
+            <a class="text-white" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Coses interesants</p></a>
+        </div>
+    </footer>
+    <footer class="row bg-dark pt-3">
+        <div class="col-12 text-center">
+            <img src="../img/BikeTour250x141.png" width="125px" height="60px">
+        </div>
+        <div class="col-12 text-center">
+            <p class="text-white"> Copyright © 2015-2022 Mallorca Bike Tour</p>
+        </div>
+
+    </footer>
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRLXnIEY1UHbKR-j8cOCKYQ3Ouk2NJ7ao&callback=initMap&v=weekly" async></script>
+    <script>
+        let map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 39.71358, lng: 3.46076 },
+                zoom: 20,
+            });
+        }
+    </script>
     <script src="../js/bootstrap.bundle.js"></script>
     <script>
         (function () {

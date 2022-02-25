@@ -1,24 +1,24 @@
 // 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
-@import "../../../../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
 
 // 3. Include remainder of required Bootstrap stylesheets
-@import "../../../../../node_modules/bootstrap/scss/variables";
-@import "../../../../../node_modules/bootstrap/scss/mixins";
-@import "../../../../../node_modules/bootstrap/scss/root";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
 
 // 4. Include any optional Bootstrap CSS as needed
-@import "../../../../../node_modules/bootstrap/scss/utilities";
-@import "../../../../../node_modules/bootstrap/scss/reboot";
-@import "../../../../../node_modules/bootstrap/scss/type";
-@import "../../../../../node_modules/bootstrap/scss/images";
-@import "../../../../../node_modules/bootstrap/scss/containers";
-@import "../../../../../node_modules/bootstrap/scss/grid";
-@import "../../../../../node_modules/bootstrap/scss/helpers";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/helpers";
 
 // 5. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
-@import "../../../../../node_modules/bootstrap/scss/utilities/api";
+@import "../../node_modules/bootstrap/scss/utilities/api";
 
 //6. Add aditional custom code here
 
@@ -32,14 +32,12 @@ $color-perso:(
         "blau-5": #00BFFF,
         "blau-6": #1E90FF,
         "blau-7": #6495ED,
-        "blau-8": #4169E1,
-        "blau-9": blue,
-        "blau-10": #00008B,
+        "blau-8": #00008B,
         "warning": #ffd32a,
         "danger": #ff3f34,
         "success": #0be881,
         "check": #575fcf,
-        "primary": #575fcf
+        "primary": #4169E1
 );
 
 
@@ -52,7 +50,7 @@ $utilities-text-colors: map-merge($utilities-text-colors, $color-perso);
 
 
 //importam tot el boostrap
-@import "../../../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 
 //Tipografia
@@ -74,9 +72,10 @@ $utilities-text-colors: map-merge($utilities-text-colors, $color-perso);
 
 //
 .underline{
-
   border-bottom: 1px solid grey;
 }
+
+//Fons dels formularis
 
 .fons{
   background-image: url("../img/fons.jpg");
@@ -85,6 +84,19 @@ $utilities-text-colors: map-merge($utilities-text-colors, $color-perso);
   background-size: cover;
 
 }
+
+//Fons plana principal
+
+.fons-principal{
+  background-image: url("../img/biciWallpaper.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+//Articles
+
 .seleccio:hover{
   background-color: #EBEBEB !important;
 }
