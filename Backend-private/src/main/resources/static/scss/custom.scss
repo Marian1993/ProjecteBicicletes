@@ -35,11 +35,9 @@ $color-perso:(
         "blau-8": #4169E1,
         "blau-9": blue,
         "blau-10": #00008B,
-        "warning": #ffd32a,
-        "danger": #ff3f34,
-        "success": #0be881,
-        "check": #575fcf,
-        "primary": #575fcf
+        "secondary": #009900,
+        "danger":  #B50C00,
+        "primary": #4169E1
 );
 
 
@@ -78,6 +76,7 @@ $utilities-text-colors: map-merge($utilities-text-colors, $color-perso);
   border-bottom: 1px solid grey;
 }
 
+//Fons dels formularis
 .fons{
   background-image: url("../img/fons.jpg");
   background-size: 100% 100%;
@@ -85,6 +84,18 @@ $utilities-text-colors: map-merge($utilities-text-colors, $color-perso);
   background-size: cover;
 
 }
+//Fons plana principal
+
+.fons-principal{
+  background-image: url("../img/biciWallpaper.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+//Articles
 .seleccio:hover{
   background-color: #EBEBEB !important;
 }
@@ -107,52 +118,46 @@ $utilities-text-colors: map-merge($utilities-text-colors, $color-perso);
   }
 }
 
-//Carousel arousel
+//Carousel carousel
 
 $carousel-transition-duration: 2s;
 
-//Sidebar
-
-
-
 //Estrelles
 
-:root {
-  --color-inactivo: #5f5050;
-  --color-hover: #ffa400;
-}
 .valoracion {
   display: flex;
   flex-direction: row-reverse;
+  --color-inactivo: #5f5050;
+  --color-hover: #ffa400;
 }
-.valoracion button {
+.valoracion .star {
   background-color: initial;
   border: 0;
   color: var(--color-inactivo);
   transition: 1s all;
 }
-.valoracion button:hover {
+.valoracion .star:hover {
   cursor: pointer;
   color: var(--color-hover);
   transform: rotate(360deg);
 }
-button:nth-child(1):hover ~ button {
+button:nth-child(1):hover ~ .star {
   color: var(--color-hover);
   transform: rotate(360deg);
 }
-button:nth-child(2):hover ~ button {
+button:nth-child(2):hover ~ .star {
   color: var(--color-hover);
   transform: rotate(360deg);
 }
-button:nth-child(3):hover ~ button {
+button:nth-child(3):hover ~ .star {
   color: var(--color-hover);
   transform: rotate(360deg);
 }
-button:nth-child(4):hover ~ button {
+button:nth-child(4):hover ~ .star {
   color: var(--color-hover);
   transform: rotate(360deg);
 }
-button:nth-child(5):hover ~ button {
+button:nth-child(5):hover ~ .star {
   color: var(--color-hover);
   transform: rotate(360deg);
 }
