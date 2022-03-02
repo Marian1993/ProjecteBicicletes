@@ -19043,3 +19043,8 @@ button:nth-child(5):hover ~ button {
   color: var(--color-hover);
   transform: rotate(360deg);
 }
+
+#adalt {
+  background-image: url("../img/fons.jpg");
+  height: 90vh;
+}

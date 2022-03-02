@@ -33,7 +33,7 @@
 
 </head>
 
-<body class="pt-2">
+<body class="pt-2 container-fluid">
 
 <header class="row sticky-top border-bottom border-dark">
     <nav class="navbar navbar-expand-lg navbar-light bg-header py-1">
@@ -474,6 +474,38 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="modal fade" id="vendreProducte" data-bs-backdrop="static" data-bs-keyboard="false"
+                             tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="vendreProducteLabel">Alerta!!!</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        Estàs segur que vols vendre aquest producte?
+
+                                        <form class="d-flex align-items-center justify-content-center flex-column flex-wrap">
+                                            <div class="form-group mt-3">
+                                                <label for="vendrePreu">Preu:</label>
+                                                <input type="text" class="form-control" id="vendrePreu" placeholder="€">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="quantitatPreu">Quantitat:</label>
+                                                <input type="text" class="form-control" id="quantitatPreu" placeholder="">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close
+                                        </button>
+                                        <button type="button" class="btn btn-primary">Confirmar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -512,10 +544,13 @@
                         </td>
                         <td>
                             <div class="btn-group">
-                                <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#modificarProducte">Modificar</button>
-                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
                                         data-bs-target="#borrarProducte">Eliminar
+                                </button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#vendreProducte">Vendre
                                 </button>
                             </div>
                         </td>
@@ -537,10 +572,13 @@
                         </td>
                         <td>
                             <div class="btn-group">
-                                <button type="button" class="btn btn-warning" data-bs-toggle="modal"
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                                         data-bs-target="#modificarProducte">Modificar</button>
-                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal"
                                         data-bs-target="#borrarProducte">Eliminar
+                                </button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#vendreProducte">Vendre
                                 </button>
                             </div>
                         </td>
