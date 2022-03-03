@@ -11,7 +11,7 @@ public class HomeControler {
         return "home";
     }
 
-    @GetMapping("/bicicletes")
+    @GetMapping("/bicyclePage.html")
     public String getBicicleta(){
         return "bicyclePage";
     }
