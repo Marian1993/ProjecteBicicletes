@@ -2,9 +2,153 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagina de Registro</title>
+  <!--
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  -->
+  <link rel="stylesheet" href="../css/custom.css">
 </head>
-<body>
-$END$
+<body class="bg-dark container-fluid">
+<header class="row sticky-top border-bottom border-dark">
+  <nav class="navbar navbar-expand-lg navbar-light bg-header py-1">
+    <div class="col-lg-5 col-12 ps-3">
+      <button class="navbar-toggler btn btn-sm border-2 border-dark px-2 me-1 shadow-none none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="PaginaPrincipal.html"><img src="../img/BikeTour250x141.png" width="120px" height="55px"></a>
+      <a class="navbar-brand d-sm-inline d-none" href="AdminPaginaPrincipal.html"><span class="h4">Mallorca Bike Tour</span></a>
+    </div>
+    <div class="collapse navbar-collapse col-7 justify-content-end pe-4" id="navbarSupportedContent">
+      <ul class="navbar-nav mb-lg-0 gap-4">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="ProductesModificarProductes.html">Productes</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="AdminHistorialUsuarisRegistrats.html">Usuaris</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="AdminValoracions.html">Valoracions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="AdminLogin.html">Inicia sessió</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Menu</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="navbar-nav">
+
+        <li class="accordion pb-2">
+          <div class="accordion-item border-0">
+            <p class="accordion-header">
+              <button class="collapsed border-0 bg-white p-0 dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+                Llista
+              </button>
+            </p>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+              <ul class="accordion-body pb-0 pt-1">
+                <li class="pb-1"><a class="text-black text-decoration-none" href="ProductesModificarProductes.html">Productes</a></li>
+                <li><a class="text-black text-decoration-none" href="AdminHistorialUsuarisRegistrats.html">Usuaris</a></li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a class="nav-link text-dark" href="valoracions.html">Valoracions</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="login.html">Inicia sessió</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="col-9 mt-4 rounded-3 mb-5 p-4 bg-white" style="margin:auto">
+  <div class=" col-12 justify-content-md-center">
+    <h4 class="p-2">Crear Usuari</h4>
+    <h6 class="p-2">Registrar-se</h6>
+  </div>
+  <div class="row g-3">
+    <div class="col p-2">
+      <label for="inputname" class="form-label">Nom</label>
+      <input id="inputname" type="text" class="form-control" placeholder="First name" aria-label="Nom">
+    </div>
+    <div class="col p-2">
+      <label for="inputlastname" class="form-label">Cognoms</label>
+      <input id="inputlastname" type="text" class="form-control" placeholder="Last name" aria-label="Cognoms">
+    </div>
+  </div>
+
+  <form class="row g-3">
+    <div class="col-md-8 p-2">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4">
+    </div>
+    <div class="col-md-6 p-2">
+      <label for="inputPassword4" class="form-label">Contrasenya</label>
+      <input type="password" class="form-control" id="inputPassword4">
+    </div>
+    <div class="col-md-6 p-2">
+      <label for="inputPassword5" class="form-label">Confirmar contrasenya</label>
+      <input type="password" class="form-control" id="inputPassword5">
+    </div>
+    <div class="col-10 p-2">
+      <label for="inputAddress" class="form-label">Direcció</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="C/ Palomo Cojo Nº67">
+    </div>
+    <div class="col-10 p-2">
+      <label for="inputAddress2" class="form-label">2ª Direcció (OPCIONAL)</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Escriu el seu segon domicili">
+    </div>
+
+    <div class="mb-3 col-6">
+      <label for="exampleInputnum" class="form-label">Teléfon</label>
+      <input type="email" class="form-control" id="exampleInputnum" aria-describedby="emailHelp">
+      <div id="emailHelp" class="form-text">El seu teléfon no sera guardat a cap puesto</div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">Ciutat</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">Provincia</label>
+      <select id="inputState" class="form-select">
+        <option selected>Elegeix</option>
+        <option>Baleares</option>
+        <option>Valencia</option>
+        <option>Cataluña</option>
+        <option>Aragon</option>
+      </select>
+    </div>
+    <div class="col-md-2">
+      <label for="inputZip" class="form-label">Codi Postal</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+    <div class="col-12">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Recordar contrasenya
+        </label>
+      </div>
+    </div>
+    <div class="col-12">
+      <a class="btn btn-dark float-end"  href="PaginaPrincipal.html">Crear usuari</a>
+    </div>
+  </form>
+</div>
+
+<!--
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+-->
 </body>
 </html>
