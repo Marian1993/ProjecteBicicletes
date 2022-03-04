@@ -5,32 +5,32 @@
   <title>Valoracions</title>
   <script src="https://kit.fontawesome.com/849f1f6314.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="/static/css/custom.css">
+  <link rel="stylesheet" href="/css/custom.css">
 
 </head>
 <body class="container-fluid">
 <header class="row sticky-top border-bottom border-dark">
   <nav class="navbar navbar-expand-lg navbar-light bg-header py-1">
-    <div class="col-lg-5 col-12 ps-3">
+    <div class="col-lg-5 col-12">
       <button class="navbar-toggler btn btn-sm border-2 border-dark px-2 me-1 shadow-none none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a href="AdminPaginaPrincipal.html"><img src="../static/img/BikeTour250x141.png" width="120" height="55" alt="..."></a>
-      <a class="navbar-brand d-sm-inline d-none" href="AdminPaginaPrincipal.html"><span class="h4">Mallorca Bike Tour</span></a>
+      <a href="/"><img src="/img/BikeTour250x141.png" width="120" height="55" alt="..."></a>
+      <a class="navbar-brand d-sm-inline d-none" href="/"><span class="h4">Mallorca Bike Tour</span></a>
     </div>
     <div class="collapse navbar-collapse col-7 justify-content-end pe-4" id="navbarSupportedContent">
       <ul class="navbar-nav mb-lg-0 gap-4">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="historial-productes">Productes</a>
+          <a class="nav-link active" aria-current="page" href="/historial-productes">Productes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="historial-usuaris">Usuaris</a>
+          <a class="nav-link active" aria-current="page" href="/historial-usuaris">Usuaris</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="valoracions">Valoracions</a>
+          <a class="nav-link active" aria-current="page" href="/valoracions">Valoracions</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="formulari-lloguer">Formulari lloguer</a>
+          <a class="nav-link active" aria-current="page" href="/formulari-lloguer">Formulari lloguer</a>
         </li>
       </ul>
     </div>
@@ -43,16 +43,16 @@
     <div class="offcanvas-body">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-black" aria-current="page" href="historial-productes">Productes</a>
+          <a class="nav-link text-black" aria-current="page" href="/historial-productes">Productes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-black" aria-current="page" href="historial-usuaris">Usuaris</a>
+          <a class="nav-link text-black" aria-current="page" href="/historial-usuaris">Usuaris</a>
         </li>
         <li>
-          <a class="nav-link text-black" href="valoracions">Valoracions</a>
+          <a class="nav-link text-black" href="/valoracions">Valoracions</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-black" href="formulari-lloguer">Formulari lloguer</a>
+          <a class="nav-link text-black" href="/formulari-lloguer">Formulari lloguer</a>
         </li>
       </ul>
     </div>
@@ -63,25 +63,25 @@
     <div class="row">
       <div class="col-sm-5 col-md-6 col-12 pb-4">
         <h1>Valoracions</h1>
-        <div class="comment mt-4 text-justify float-left"><img src="/static/img/user.jpg" alt=""
+        <div class="comment mt-4 text-justify float-left"><img src="/img/user.jpg" alt=""
                                                                class="rounded-circle" width="40" height="40">
           <h4>Jhon Doe</h4> <span>- 17 Octubre, 2022</span> <br>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam
             vero sequi velit molestias doloremque molestiae dicta?</p>
         </div>
-        <div class="text-justify darker mt-4 float-right"><img src="/static/img/Volkan.jpg" alt=""
+        <div class="text-justify darker mt-4 float-right"><img src="/img/Volkan.jpg" alt=""
                                                                class="rounded-circle" width="40" height="40">
           <h4>Volkan Moll</h4> <span>- 15 Febrer, 2022</span> <br>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam
             vero sequi velit molestias doloremque molestiae dicta?</p>
         </div>
-        <div class="comment mt-4 text-justify"><img src="/static/img/MariaA.jpg" alt="" class="rounded-circle"
+        <div class="comment mt-4 text-justify"><img src="/img/MariaA.jpg" alt="" class="rounded-circle"
                                                     width="40" height="40">
           <h4>Maria Antònia</h4> <span>- 22 Abril, 2020</span> <br>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam
             vero sequi velit molestias doloremque molestiae dicta?</p>
         </div>
-        <div class="darker mt-4 text-justify"><img src="/static/img/Sebastia.jpg" alt="" class="rounded-circle"
+        <div class="darker mt-4 text-justify"><img src="/img/Sebastia.jpg" alt="" class="rounded-circle"
                                                    width="40" height="40">
           <h4>Sebastià Munar</h4> <span>- 22 Maig, 2022</span> <br>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam
@@ -100,7 +100,7 @@
           <div class="form-group"><label for="email">Email</label> <input type="text" name="email" id="email"
                                                                           class="form-control"></div>
           <div class="form-group">
-            <button type="button" id="post" class="btn">Post Comment</button>
+            <button type="button" id="post" class="btn btn-primary mt-3 float-end">Post Comment</button>
           </div>
         </form>
       </div>
@@ -130,14 +130,14 @@
 </footer>
 <footer class="row bg-footer pt-3">
   <div class="col-12 text-center">
-    <img src="../static/img/BikeTour250x141.png" width="125" height="60" alt="...">
+    <img src="/img/BikeTour250x141.png" width="125" height="60" alt="...">
   </div>
   <div class="col-12 text-center">
     <p class="text-white"> Copyright © 2015-2022 Mallorca Bike Tour</p>
   </div>
 
 </footer>
-<script src="/static/js/bootstrap.bundle.js"></script>
+<script src="/js/bootstrap.bundle.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRLXnIEY1UHbKR-j8cOCKYQ3Ouk2NJ7ao&callback=initMap&v=weekly"
         async></script>
 <script>
