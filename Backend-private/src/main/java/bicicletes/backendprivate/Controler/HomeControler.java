@@ -8,77 +8,42 @@ public class HomeControler {
 
     @GetMapping("/")
     public String getHome(){
-        return "home";
-    }
-
-    @GetMapping("/bicicletes")
-    public String getBicicleta(){
-        return "bicyclePage";
-    }
-
-    @GetMapping("/patinets")
-    public String getPatinet(){
-        return "rollerSkatePage";
-    }
-
-    @GetMapping("/login")
-    public String getLogin(){
-        return "login";
-    }
-
-    @GetMapping("/carreto")
-    public String getCarreto(){
-        return "carreto";
-    }
-
-    @GetMapping("/formulari-pagament-treballador")
-    public String getFormPagamentTreballador(){
-        return "bicyclePaymentForm";
-    }
-
-    @GetMapping("/crear-valoracio")
-    public String getCrearValoracio(){
-        return "createRate";
-    }
-
-    @GetMapping("/fitxa-contracte")
-    public String getContracte(){
-        return "FitxaContracte";
-    }
-
-    @GetMapping("/formulari-pagament")
-    public String getFormPagament(){
-        return "formToPay";
-    }
-
-    @GetMapping("/historial")
-    public String getHistorialClient(){
-        return "HistorialClient";
+        return "AdminPaginaPrincipal";
     }
 
     @GetMapping("/historial-usuaris")
     public String getHistorialUsuaris(){
-        return "historialUsuarisRegistrats";
-    }
-
-    @GetMapping("/modificar-usuaris")
-    public String getModificarUsuaris(){
-        return "modificarEliminarUsuari";
-    }
-
-    @GetMapping("/crear-contracte")
-    public String getCrearContracte(){
-        return "newContracte";
-    }
-
-    @GetMapping("/pagina-registre")
-    public String getPaginaRegistre(){
-        return "paginaRegistre";
+        return "AdminHistorialUsuarisRegistrats";
     }
 
     @GetMapping("/historial-productes")
     public String getHistorialProductes(){
-        return "ProductesModificarProductes";
+        return "AdminHistorialProductes";
+    }
+
+    @GetMapping("/sobre-nosaltres")
+    public String getInformacioEmpresa(){
+        return "AdminInformacioEmpresa";
+    }
+
+    @GetMapping("/formulari-lloguer")
+    public String getFormPagament(){
+        return "AdminProductPaymentForm";
+    }
+
+    @GetMapping("/valoracions")
+    public String getValoracions(){
+        return "AdminValoracions";
+    }
+
+    @GetMapping("/historial-usuaris/registrar")
+    public String getRegistreUsuari(){
+        return "AdminPaginaRegistre";
+    }
+
+    @GetMapping("/historial-usuaris/modificar")
+    public String getModificarUsuari(){
+        return "AdminModificarUsuari";
     }
 
 }
