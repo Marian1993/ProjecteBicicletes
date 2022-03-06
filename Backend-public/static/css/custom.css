@@ -18792,14 +18792,14 @@ textarea.form-control-lg {
 }
 
 .fons {
-  background-image: url("../img/fons.jpg");
+  background-image: url("../img/fons.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .fons-principal {
-  background-image: url("../img/biciWallpaper.jpg");
+  background-image: url("../img/biciWallpaper.webp");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
