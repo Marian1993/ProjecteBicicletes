@@ -33,7 +33,10 @@ $color-perso:(
         "blau-6": #1E90FF,
         "blau-7": #6495ED,
         "blau-8": #00008B,
-        "success": #009900,
+        "warning": #ffd32a,
+        "danger": #ff3f34,
+        "success": #0be881,
+        "check": #575fcf,
         "primary": #4169E1
 );
 
@@ -116,9 +119,12 @@ $utilities-text-colors: map-merge($utilities-text-colors, $color-perso);
   }
 }
 
-//Carousel carousel
+//Carousel arousel
 
 $carousel-transition-duration: 2s;
+
+//Sidebar
+
 
 
 //Estrelles
