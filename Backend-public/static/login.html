@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log In</title>
 
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="./css/custom.css">
 
     <style>
 
@@ -85,6 +85,7 @@
         </div>
     </div>
 </header>
+
 <div class="d-flex flex-column justify-content-between complet">
     <div class="container mb-4">
         <div class="row mt-4 ">
@@ -99,7 +100,7 @@
                 <form class="row g-3 needs-validation" novalidate>
                     <div class="mb-3">
                         <label for="validationCustomUsername" class="form-label">Email:</label>
-                        <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                        <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
                     </div>
 
 
@@ -173,31 +174,31 @@
             <div class="col-12 text-center">
                 <p class="text-white"> Copyright © 2015-2022 Mallorca Bike Tour</p>
             </div>
-
         </div>
     </footer>
 </div>
-<script src="js/bootstrap.bundle.js"></script>
+<script src="../js/bootstrap.bundle.js"></script>
 
 <script>
     (function () {
         'use strict'
-
         var forms = document.querySelectorAll('.needs-validation')
 
         Array.prototype.slice.call(forms)
             .forEach(function (form) {
                 form.addEventListener('submit', function (event) {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
+
+                    event.preventDefault()
+                    event.stopPropagation()
+
+                    if (form.checkValidity()) {
+                        window.location.href = "../../Backend-private/src/main/resources/static/html/PaginaPrincipal.html";
                     }
 
                     form.classList.add('was-validated')
                 }, false)
             })
     })()
-
 </script>
 
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRLXnIEY1UHbKR-j8cOCKYQ3Ouk2NJ7ao&callback=initMap&v=weekly" async></script>
@@ -211,6 +212,5 @@
         });
     }
 </script>
-
 </body>
 </html>

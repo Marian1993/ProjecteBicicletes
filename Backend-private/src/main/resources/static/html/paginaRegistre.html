@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de Registro</title>
-
     <link rel="stylesheet" href="../css/custom.css">
 </head>
 <body class="fons container-fluid">
@@ -80,166 +79,130 @@
         </div>
     </div>
 </header>
-
-
 <div class="d-flex justify-content-between flex-column complet">
     <div class="col-8 my-4 rounded-3 p-4 bg-white" style="margin:auto">
-        <div class="col-12 justify-content-md-center">
-
-
-    <div class="col-9 mt-4 rounded-3 mb-5 p-4 bg-white" style="margin:auto">
         <div class=" col-12 justify-content-md-center">
-
-            <h2 class="p-2 text-center">Crear Usuari</h2>
-            <h4 class="p-2">Registrar-se</h4>
+            <h1 class="h1 text-center mt-2 mb-4">Crear Usuari</h1>
         </div>
-
         <form class="row g-3 needs-validation" novalidate>
-
-
-        <div class="col-sm-12 col-md-6">
-            <label for="validationCustomUser" class="form-label">Nom</label>
-          <input  type="text" class="form-control" placeholder="First name" aria-label="Nom"
-                 id="validationCustomUser" aria-describedby="inputGroupPrepend" required>
-        </div>
-        <div class="col-sm-12 col-md-6">
-            <label for="validationCustomLastname" class="form-label">Cognoms</label>
-          <input  type="text" class="form-control" placeholder="Last name" aria-label="Cognoms"
-                 id="validationCustomLastname" aria-describedby="inputGroupPrepend" required>
-        </div>
-
-
-        <div class="col-sm-12 col-md-12 p-2">
-          <label for="validationCustomUsername" class="form-label">Email</label>
-          <input type="email" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
-        </div>
-        <div class="col-sm-12 col-md-6 p-2">
-          <label for="validationContrasenya" class="form-label">Contrasenya</label>
-          <input type="password" class="form-control" id="validationContrasenya" aria-describedby="inputGroupPrepend" required>
-        </div>
-        <div class="col-sm-12 col-md-6 p-2">
-            <label for="validationContrasenya1" class="form-label">Confirmar contrasenya</label>
-            <input type="password" class="form-control" id="validationContrasenya1" aria-describedby="inputGroupPrepend" required>
-          </div>
-        <div class="col-sm-12 col-md-6 p-2">
-          <label for="validationPlace" class="form-label">Direcció</label>
-          <input type="text" class="form-control" id="validationPlace" placeholder="C/ Palomo Cojo Nº67" id="validationPlace" aria-describedby="inputGroupPrepend" required>
-        </div>
-        <div class="col-sm-12 col-md-6 p-2">
-          <label for="validationSecondPlace" class="form-label">2ª Direcció (OPCIONAL)</label>
-          <input type="text" class="form-control" id="validationSecondPlace" placeholder="Escriu el seu segon domicili" id="validationSecondPlace" aria-describedby="inputGroupPrepend" required>
-        </div>
-
-        <div class="col-sm-12 col-md-6">
-            <label for="validationNum" class="form-label">Teléfon</label>
-            <input type="email" class="form-control" id="validationNum" aria-describedby="inputGroupPrepend" required>
-
-        </div>
-
-            <div class="col-sm-12 col-md-6">
+            <div class="col-md-6 col-12">
+                <label for="inputname" class="form-label">Nom</label>
+                <input id="inputname" type="text" class="form-control" placeholder="First name" aria-label="Nom" required>
+            </div>
+            <div class="col-md-6 col-12">
+                <label for="inputlastname" class="form-label">Cognoms</label>
+                <input id="inputlastname" type="text" class="form-control" placeholder="Last name" aria-label="Cognoms" required>
+            </div>
+            <div class="col-md-6 col-12">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" required>
+            </div>
+            <div class="col-md-6 col-12">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" required>
+            </div>
+            <div class="col-md-4 col-6">
                 <label for="inputState" class="form-label">Provincia</label>
-                <select id="inputState" class="form-select">
-                    <option selected>Baleares</option>
-                    <option>Valencia</option>
-                    <option>Cataluña</option>
-                    <option>Aragon</option>
+                <select id="inputState" class="form-select" required>
+                    <option value="" selected disabled>Elegeix</option>
+                    <option value="Baleares">Balears</option>
+                    <option value="Valencia">Valencia</option>
+                    <option value="Catalunya">Catalunya</option>
+                    <option value="Arago">Arago</option>
                 </select>
             </div>
-            <div class="col-sm-12 col-md-3">
-                <label for="validationCodi" class="form-label">Codi Postal</label>
-                <input type="text" class="form-control" id="validationCodi" aria-describedby="inputGroupPrepend" required>
+            <div class="col-md-2 col-6">
+                <label for="inputZip" class="form-label">Codi Postal</label>
+                <input type="text" class="form-control" id="inputZip" required>
             </div>
-
-            <div class="col-sm-12 col-md-9">
-                <label for="validationCity" class="form-label">Ciutat</label>
-                <input type="text" class="form-control" id="validationCity" aria-describedby="inputGroupPrepend" required>
+            <div class="col-md-6 col-12">
+                <label for="inputAddress" class="form-label">Direcció</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="C/ Palomo Cojo Nº67" required>
             </div>
-            <div class="col-sm-12 col-6-md">
-                <button class="btn btn-primary m-3 float-end" type="submit">Crear usuari</button>
-                <a class="btn btn-primary m-3 float-end" href="PaginaPrincipal.html">Tornar enrere</a>
-
+            <div class="col-md-6 col-12">
+                <label for="inputAddress2" class="form-label">2ª Direcció (OPCIONAL)</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Escriba su segunda residencia" required>
             </div>
-            <div class="col-sm-12 col-6-md">
-
+            <div class="col-6">
+                <label for="exampleInputnum" class="form-label">Teléfono</label>
+                <input type="text" class="form-control" id="exampleInputnum" required>
+            </div>
+            <div class="col-6">
+                <label for="inputCity" class="form-label">Ciutat</label>
+                <input type="text" class="form-control" id="inputCity" required>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary float-end">Guardar canvis</button>
+                <a class="btn btn-danger float-end me-3" href="./login.html">Cancelar</a>
             </div>
         </form>
-
-    </div>
-
+    </div></div>
+    <footer>
+        <div class="row py-3 bg-dark justify-content-around border-bottom border-light border-2">
+            <div class="col-md-3 col-12 my-3" id="map"></div>
+            <div class="col-md-3 col-5 my-3">
+                <h3 class="h5 mb-1 text-decoration-underline text-white">Coneixemos</h3>
+                <p class="small mb-1 text-white">Illes Balears</p>
+                <p class="small mb-1 text-white">C/Cami de s'es flors nº50, 07550</p>
+                <p class="small mb-1 text-white">Tel. Fixo: 971567812</p>
+                <p class="small mb-1 text-white">Tel. Movil: 667485213</p>
+                <p class="small mb-1 text-white">Email: fanbicis@gmail.com</p>
+                <a class="text-white text-decoration-none" href="InformacioEmpresa.html" target="_blank"><p class="small mb-1">De nosaltres</p></a>
+            </div>
+            <div class="col-md-3 col-5 my-3">
+                <h3 class="h5 mb-1 text-decoration-underline text-white">Enllaços d'interes</h3>
+                <a class="text-white" href="https://www.ferrerhotels.com/travellost/rutas-ciclistas-de-mallorca/" target="_blank"><p class="small mb-1">Rutes de mallorca</p></a>
+                <a class="text-white" href="https://es.wikiloc.com/rutas/descenso-mtb/espana/illes-balears" target="_blank"><p class="small mb-1">Rutes de descens</p></a>
+                <a class="text-white" href="http://localhost:63342/Backend-private/static/html/index.html?_ijt=n0opdfa6u4d0htjd4edm6l440i&_ij_reload=RELOAD_ON_SAVE" target="_blank"><p class="small mb-1">Quina bici et va millor</p></a>
+                <a class="text-white" href="https://revista.dgt.es/es/educacion-formacion/reportajes/2021/0930-Normas-ciclistas.shtml" target="_blank"><p class="small mb-1">Normes al volant</p></a>
+                <a class="text-white" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Gastronomia damunt rodes</p></a>
+                <a class="text-white" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Coses interesants</p></a>
+            </div>
         </div>
-    </div>
-</div>
-
-
-
-
-
-<footer>
-    <div class="row py-3 bg-dark justify-content-around border-bottom border-light border-2">
-        <div class="col-md-3 col-12 my-3" id="map"></div>
-        <div class="col-md-3 col-5 my-3">
-            <h3 class="h5 mb-1 text-decoration-underline text-white">Coneixemos</h3>
-            <p class="small mb-1 text-white">Illes Balears</p>
-            <p class="small mb-1 text-white">C/Cami de s'es flors nº50, 07550</p>
-            <p class="small mb-1 text-white">Tel. Fixo: 971567812</p>
-            <p class="small mb-1 text-white">Tel. Movil: 667485213</p>
-            <p class="small mb-1 text-white">Email: fanbicis@gmail.com</p>
-            <a class="text-white text-decoration-none" href="InformacioEmpresa.html" target="_blank"><p class="small mb-1">De nosaltres</p></a>
+        <div class="row bg-footer pt-3">
+            <div class="col-12 text-center">
+                <img src="../img/BikeTour250x141.webp" width="125" height="60" alt="...">
+            </div>
+            <div class="col-12 text-center">
+                <p class="text-white"> Copyright © 2015-2022 Mallorca Bike Tour</p>
+            </div>
         </div>
-        <div class="col-md-3 col-5 my-3">
-            <h3 class="h5 mb-1 text-decoration-underline text-white">Enllaços d'interes</h3>
-            <a class="text-white" href="https://www.ferrerhotels.com/travellost/rutas-ciclistas-de-mallorca/" target="_blank"><p class="small mb-1">Rutes de mallorca</p></a>
-            <a class="text-white" href="https://es.wikiloc.com/rutas/descenso-mtb/espana/illes-balears" target="_blank"><p class="small mb-1">Rutes de descens</p></a>
-            <a class="text-white" href="http://localhost:63342/Backend-private/static/html/index.html?_ijt=n0opdfa6u4d0htjd4edm6l440i&_ij_reload=RELOAD_ON_SAVE" target="_blank"><p class="small mb-1">Quina bici et va millor</p></a>
-            <a class="text-white" href="https://revista.dgt.es/es/educacion-formacion/reportajes/2021/0930-Normas-ciclistas.shtml" target="_blank"><p class="small mb-1">Normes al volant</p></a>
-            <a class="text-white" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Gastronomia damunt rodes</p></a>
-            <a class="text-white" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Coses interesants</p></a>
-        </div>
-    </div>
-    <div class="row bg-footer pt-3">
-        <div class="col-12 text-center">
-            <img src="../img/BikeTour250x141.webp" width="125" height="60" alt="...">
-        </div>
-        <div class="col-12 text-center">
-            <p class="text-white"> Copyright © 2015-2022 Mallorca Bike Tour</p>
-        </div>
-    </div>
-</footer>
+    </footer>
 
+    <script src="../js/bootstrap.bundle.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRLXnIEY1UHbKR-j8cOCKYQ3Ouk2NJ7ao&callback=initMap&v=weekly" async></script>
+    <script>
+        let map;
 
-<script src="../js/bootstrap.bundle.js"></script>
+        function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 39.71358, lng: 3.46076 },
+                zoom: 20,
+            });
+        }
+    </script>
+
 
 <script>
     (function () {
         'use strict'
-
         var forms = document.querySelectorAll('.needs-validation')
 
         Array.prototype.slice.call(forms)
             .forEach(function (form) {
                 form.addEventListener('submit', function (event) {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
+
+                    event.preventDefault()
+                    event.stopPropagation()
+
+                    if (form.checkValidity()) {
+                        window.location.href = "PaginaPrincipal.html";
                     }
 
                     form.classList.add('was-validated')
                 }, false)
             })
     })()
-
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRLXnIEY1UHbKR-j8cOCKYQ3Ouk2NJ7ao&callback=initMap&v=weekly" async></script>
-<script>
-    let map;
-
-    function initMap() {
-        map = new google.maps.Map(document.getElementById("map"), {
-            center: { lat: 39.71358, lng: 3.46076 },
-            zoom: 20,
-        });
-    }
-</script>
-
 </body>
 </html>

@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6aa16d35-7327-4a98-93bf-5495498d1924" name="Changes" comment="S'ha afegit sa part publica i algunes modificacions de planes">
-      <change afterPath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/fitxes/ClientBikeModalRent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/fitxes/ClientBikeModalSell.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/carreto.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/carreto.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/carretoProductesPerVendre.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/carretoProductesPerVendre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/paginaRegistre.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/paginaRegistre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend-public/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-public/static/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend-public/static/paginaRegistre.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-public/static/paginaRegistre.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +46,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Backend-private/src/main/resources/static/html" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -56,6 +55,11 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\volka\Desktop\ProjecteBicicletes\Backend-private\src\main\resources\static\html" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -86,7 +90,7 @@
       <workItem from="1644406790236" duration="35000" />
       <workItem from="1645810086986" duration="361000" />
       <workItem from="1645813961805" duration="27000" />
-      <workItem from="1646757455108" duration="4200000" />
+      <workItem from="1646757455108" duration="9755000" />
     </task>
     <servers />
   </component>
