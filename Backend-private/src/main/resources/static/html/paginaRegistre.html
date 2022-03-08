@@ -221,6 +221,17 @@
     })()
 
 </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRLXnIEY1UHbKR-j8cOCKYQ3Ouk2NJ7ao&callback=initMap&v=weekly" async></script>
+<script>
+    let map;
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: 39.71358, lng: 3.46076 },
+            zoom: 20,
+        });
+    }
+</script>
 
 </body>
 </html>
