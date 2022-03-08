@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modificar o eliminar usuari</title>
+    <title>Pagina de Registro</title>
     <link rel="stylesheet" href="/css/custom.css">
 </head>
 <body class="fons container-fluid">
@@ -66,38 +66,38 @@
 <div class="d-flex justify-content-between flex-column complet">
     <div class="col-8 my-4 rounded-3 p-4 bg-white" style="margin:auto">
         <div class=" col-12 justify-content-md-center">
-            <h1 class="h1 text-center mt-2 mb-4">Modificar usuari</h1>
+            <h1 class="h1 text-center mt-2 mb-4">Modificar Usuari</h1>
         </div>
-        <form class="row g-3">
+        <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-6 col-12">
                 <label for="inputname" class="form-label">Nom</label>
-                <input id="inputname" type="text" class="form-control" placeholder="First name" aria-label="Nom">
+                <input id="inputname" type="text" class="form-control" placeholder="First name" aria-label="Nom" required>
             </div>
             <div class="col-md-6 col-12">
                 <label for="inputlastname" class="form-label">Cognoms</label>
-                <input id="inputlastname" type="text" class="form-control" placeholder="Last name" aria-label="Cognoms">
+                <input id="inputlastname" type="text" class="form-control" placeholder="Last name" aria-label="Cognoms" required>
             </div>
             <div class="col-md-6 col-12">
                 <label for="inputEmail4" class="form-label">Email</label>
-                <input type="email" class="form-control" id="inputEmail4">
+                <input type="email" class="form-control" id="inputEmail4" required>
             </div>
             <div class="col-md-4 col-6">
                 <label for="inputState" class="form-label">Provincia</label>
-                <select id="inputState" class="form-select">
-                    <option selected>Elegeix</option>
-                    <option>Baleares</option>
-                    <option>Valencia</option>
-                    <option>Cataluña</option>
-                    <option>Aragon</option>
+                <select id="inputState" class="form-select" required>
+                    <option value="" selected disabled>Elegeix</option>
+                    <option value="Baleares">Balears</option>
+                    <option value="Valencia">Valencia</option>
+                    <option value="Catalunya">Catalunya</option>
+                    <option value="Arago">Arago</option>
                 </select>
             </div>
             <div class="col-md-2 col-6">
                 <label for="inputZip" class="form-label">Codi Postal</label>
-                <input type="text" class="form-control" id="inputZip">
+                <input type="text" class="form-control" id="inputZip" required>
             </div>
             <div class="col-md-6 col-12">
                 <label for="inputAddress" class="form-label">Direcció</label>
-                <input type="text" class="form-control" id="inputAddress" placeholder="C/ Palomo Cojo Nº67">
+                <input type="text" class="form-control" id="inputAddress" placeholder="C/ Palomo Cojo Nº67" required>
             </div>
             <div class="col-md-6 col-12">
                 <label for="inputAddress2" class="form-label">2ª Direcció (OPCIONAL)</label>
@@ -105,14 +105,15 @@
             </div>
             <div class="col-6">
                 <label for="exampleInputnum" class="form-label">Teléfono</label>
-                <input type="email" class="form-control" id="exampleInputnum" aria-describedby="emailHelp">
+                <input type="text" class="form-control" id="exampleInputnum" required>
             </div>
             <div class="col-6">
                 <label for="inputCity" class="form-label">Ciutat</label>
-                <input type="text" class="form-control" id="inputCity">
+                <input type="text" class="form-control" id="inputCity" required>
             </div>
             <div class="col-12">
-                <a class="btn btn-primary float-end" href="/historial-usuaris">Guardar canvis</a>
+                <button type="submit" class="btn btn-primary float-end">Guardar canvis</button>
+                <a class="btn btn-danger float-end me-3" href="/historial-usuaris">Cancelar</a>
             </div>
         </form>
     </div>
@@ -148,7 +149,7 @@
         </div>
     </footer>
 </div>
-<script src="../js/bootstrap.bundle.js"></script>
+<script src="/js/bootstrap.bundle.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRLXnIEY1UHbKR-j8cOCKYQ3Ouk2NJ7ao&callback=initMap&v=weekly" async></script>
 <script>
     let map;
@@ -159,6 +160,27 @@
             zoom: 20,
         });
     }
+</script>
+<script>
+    (function () {
+        'use strict'
+        var forms = document.querySelectorAll('.needs-validation')
+
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+                form.addEventListener('submit', function (event) {
+
+                    event.preventDefault()
+                    event.stopPropagation()
+
+                    if (form.checkValidity()) {
+                        window.location.href = "/historial-usuaris";
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
 </script>
 </body>
 </html>
