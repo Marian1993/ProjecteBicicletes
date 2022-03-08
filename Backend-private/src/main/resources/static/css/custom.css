@@ -18864,6 +18864,9 @@ textarea.form-control-lg {
 }
 * {
   font-family: Hind Siliguri;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .bg-footer {
@@ -18890,6 +18893,10 @@ textarea.form-control-lg {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+body, .complet {
+  min-height: 100vh;
 }
 
 .seleccio:hover {
@@ -18962,6 +18969,7 @@ button:nth-child(5):hover ~ .star {
 }
 
 #adalt {
-  background-image: url("../img/fons.jpg");
-  height: 90vh;
+  background-image: url("../img/fons.webp");
+  background-repeat: no-repeat;
+  height: 600px;
 }

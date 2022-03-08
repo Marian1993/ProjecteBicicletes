@@ -18791,6 +18791,10 @@ textarea.form-control-lg {
   border-bottom: 1px solid grey;
 }
 
+body, .complet {
+  min-height: 100vh;
+}
+
 .fons {
   background-image: url("../img/fons.webp");
   background-size: 100% 100%;
