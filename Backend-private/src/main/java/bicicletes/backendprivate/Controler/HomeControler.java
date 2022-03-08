@@ -8,17 +8,22 @@ public class HomeControler {
 
     @GetMapping("/")
     public String getHome(){
-        return "AdminPaginaPrincipal";
+        return "AdminHistorialProductes";
+    }
+
+    @GetMapping("/historial-ventes")
+    public String getHistorialVentes(){
+        return "AdminSalesHistory";
+    }
+
+    @GetMapping("/historial-ventes/contracte")
+    public String getNouContracte(){
+        return "AdminContract";
     }
 
     @GetMapping("/historial-usuaris")
     public String getHistorialUsuaris(){
         return "AdminHistorialUsuarisRegistrats";
-    }
-
-    @GetMapping("/historial-productes")
-    public String getHistorialProductes(){
-        return "AdminHistorialProductes";
     }
 
     @GetMapping("/sobre-nosaltres")

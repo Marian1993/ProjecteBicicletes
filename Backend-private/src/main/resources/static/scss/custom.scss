@@ -58,6 +58,9 @@ $utilities-text-colors: map-merge($utilities-text-colors, $color-perso);
 @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
 *{
   font-family: Hind Siliguri;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 //custom layout
 
@@ -93,7 +96,9 @@ $utilities-text-colors: map-merge($utilities-text-colors, $color-perso);
   background-size: cover;
 
 }
-
+body, .complet {
+  min-height: 100vh;
+}
 
 //Articles
 .seleccio:hover{
@@ -167,6 +172,7 @@ button:nth-child(5):hover ~ .star {
 
 //fons per InformaciióEmpresa
 #adalt {
-  background-image: url('../img/fons.jpg');
-  height: 90vh;
+  background-image: url('../img/fons.webp');
+  background-repeat: no-repeat;
+  height: 600px;
 }
