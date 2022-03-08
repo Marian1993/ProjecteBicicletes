@@ -27,17 +27,17 @@
 <body class="bg-white container-fluid">
 <header class="row sticky-top border-bottom border-dark">
     <nav class="navbar navbar-expand-lg navbar-light bg-header py-1">
-        <div class="col-lg-5 col-12">
+        <div class="col-lg-4 col-12">
             <button class="navbar-toggler btn btn-sm border-2 border-dark px-2 me-1 shadow-none none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a href="/"><img src="/img/BikeTour250x141.webp" width="120" height="55" alt="..."></a>
             <a class="navbar-brand d-sm-inline d-none" href="/"><span class="h4">Mallorca Bike Tour</span></a>
         </div>
-        <div class="collapse navbar-collapse col-7 justify-content-end pe-4" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse col-8 justify-content-end pe-4" id="navbarSupportedContent">
             <ul class="navbar-nav mb-lg-0 gap-4">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/historial-productes">Productes</a>
+                    <a class="nav-link active" aria-current="page" href="/">Productes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/historial-usuaris">Usuaris</a>
@@ -47,6 +47,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/formulari-lloguer">Formulari lloguer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/historial-ventes">Historial Ventes</a>
                 </li>
             </ul>
         </div>
@@ -59,7 +62,7 @@
         <div class="offcanvas-body">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link text-black" aria-current="page" href="/historial-productes">Productes</a>
+                    <a class="nav-link text-black" aria-current="page" href="/">Productes</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-black" aria-current="page" href="/historial-usuaris">Usuaris</a>
@@ -70,188 +73,193 @@
                 <li class="nav-item">
                     <a class="nav-link text-black" href="/formulari-lloguer">Formulari lloguer</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="/historial-ventes">Historial Ventes</a>
+                </li>
             </ul>
         </div>
     </div>
 </header>
-<div class="text-center container mb-4 bg-white p-2">
-    <h1 class="h1 my-4">Historial d'Usuaris Registrats</h1>
-    <div class="row my-3 ">
-        <div class="col-5 rounded-3">
-            <button onclick="location.href='/historial-usuaris/registrar'" class="btn btn-primary float-start">Crear Usuari</button>
+<div class="d-flex flex-column justify-content-between complet">
+    <div class="text-center mb-4 bg-white p-2">
+        <h1 class="h1 my-4">Historial d'Usuaris Registrats</h1>
+        <div class="row my-3 ">
+            <div class="col-5 rounded-3">
+                <button onclick="location.href='/historial-usuaris/registrar'" class="btn btn-primary float-start">Crear Usuari</button>
+            </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12 col-sm-6">
-            <div>
-                <table class="table table-striped table-responsive">
-                    <thead>
-                    <tr class="text-center">
-                        <th scope="col" class="img">Foto </th>
-                        <th scope="col">ID</th>
-                        <th scope="col">Nom</th>
-                        <th scope="col">Cognoms</th>
-                        <th scope="col">DNI</th>
-                        <th scope="col">Rol</th>
-                        <th scope="col">Accions</th>
+        <div class="row">
+            <div class="col-md-12 col-sm-6">
+                <div>
+                    <table class="table table-striped table-responsive">
+                        <thead>
+                        <tr class="text-center">
+                            <th scope="col" class="img">Foto </th>
+                            <th scope="col">ID</th>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Cognoms</th>
+                            <th scope="col">DNI</th>
+                            <th scope="col">Rol</th>
+                            <th scope="col">Accions</th>
 
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr class="text-center align-middle">
-                        <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
-                        <td>2682445</td>
-                        <td>Alberto</td>
-                        <td>Perez Lopez</td>
-                        <td>45454514B</td>
-                        <td>Administrador</td>
-                       <td>
-                           <div class="btn-group" role="group" aria-label="Basic example">
-                               <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
-                               <button type="button" class="btn btn-danger">Eliminar</button>
-                           </div>
-                       </td>
-                    </tr>
-                    <tr class="text-center align-middle">
-                        <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
-                        <td>2432564</td>
-                        <td>Alicia</td>
-                        <td>Fuentes Garcia</td>
-                        <td>45456784B</td>
-                        <td>Treballador</td>
-                        <td>
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
-                                <button type="button" class="btn btn-danger">Eliminar</button>
-                            </div>
-                        </td>
-                    </tr>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr class="text-center align-middle">
+                            <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
+                            <td>2682445</td>
+                            <td>Alberto</td>
+                            <td>Perez Lopez</td>
+                            <td>45454514B</td>
+                            <td>Administrador</td>
+                           <td>
+                               <div class="btn-group" role="group" aria-label="Basic example">
+                                   <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
+                                   <button type="button" class="btn btn-danger">Eliminar</button>
+                               </div>
+                           </td>
+                        </tr>
+                        <tr class="text-center align-middle">
+                            <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
+                            <td>2432564</td>
+                            <td>Alicia</td>
+                            <td>Fuentes Garcia</td>
+                            <td>45456784B</td>
+                            <td>Treballador</td>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
+                                    <button type="button" class="btn btn-danger">Eliminar</button>
+                                </div>
+                            </td>
+                        </tr>
 
-                    <tr class="text-center align-middle">
-                        <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
-                        <td>2452445</td>
-                        <td>Manel</td>
-                        <td>Llobera Benassar</td>
-                        <td>19275684B</td>
-                        <td>Cliente</td>
-                        <td>
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
-                                <button type="button" class="btn btn-danger">Eliminar</button>
-                            </div>
-                        </td>
-                    </tr>
+                        <tr class="text-center align-middle">
+                            <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
+                            <td>2452445</td>
+                            <td>Manel</td>
+                            <td>Llobera Benassar</td>
+                            <td>19275684B</td>
+                            <td>Cliente</td>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
+                                    <button type="button" class="btn btn-danger">Eliminar</button>
+                                </div>
+                            </td>
+                        </tr>
 
-                    <tr class="text-center align-middle">
-                        <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
-                        <td>9682445</td>
-                        <td>Cristina</td>
-                        <td>Amengual Fuster</td>
-                        <td>56238765C</td>
-                        <td>Cliente</td>
-                        <td>
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
-                                <button type="button" class="btn btn-danger">Eliminar</button>
-                            </div>
-                        </td>
-                    </tr>
+                        <tr class="text-center align-middle">
+                            <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
+                            <td>9682445</td>
+                            <td>Cristina</td>
+                            <td>Amengual Fuster</td>
+                            <td>56238765C</td>
+                            <td>Cliente</td>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
+                                    <button type="button" class="btn btn-danger">Eliminar</button>
+                                </div>
+                            </td>
+                        </tr>
 
-                    <tr class="text-center align-middle">
-                        <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
-                        <td>2452665</td>
-                        <td>Toni</td>
-                        <td>Alzamora Reus</td>
-                        <td>15294845M</td>
-                        <td>Treballador</td>
-                        <td>
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
-                                <button type="button" class="btn btn-danger">Eliminar</button>
-                            </div>
-                        </td>
-                    </tr>
+                        <tr class="text-center align-middle">
+                            <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
+                            <td>2452665</td>
+                            <td>Toni</td>
+                            <td>Alzamora Reus</td>
+                            <td>15294845M</td>
+                            <td>Treballador</td>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
+                                    <button type="button" class="btn btn-danger">Eliminar</button>
+                                </div>
+                            </td>
+                        </tr>
 
-                    <tr class="text-center align-middle">
-                        <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
-                        <td>9865327</td>
-                        <td>Marcos</td>
-                        <td>Almodovar</td>
-                        <td>Hernandez</td>
-                        <td>Administrador</td>
-                        <td>
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
-                                <button type="button" class="btn btn-danger">Eliminar</button>
-                            </div>
-                        </td>
-                    </tr>
+                        <tr class="text-center align-middle">
+                            <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
+                            <td>9865327</td>
+                            <td>Marcos</td>
+                            <td>Almodovar</td>
+                            <td>Hernandez</td>
+                            <td>Administrador</td>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
+                                    <button type="button" class="btn btn-danger">Eliminar</button>
+                                </div>
+                            </td>
+                        </tr>
 
-                    <tr class="text-center align-middle">
-                        <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
-                        <td>2452515</td>
-                        <td>Pablo</td>
-                        <td>Casero Gutierrez</td>
-                        <td>45454347D</td>
-                        <td>Client</td>
-                        <td>
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
-                                <button type="button" class="btn btn-danger">Eliminar</button>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr class="text-center align-middle">
-                        <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
-                        <td>2468616</td>
-                        <td>Victoria</td>
-                        <td>Martorell Munar</td>
-                        <td>45454514B</td>
-                        <td>Administrador</td>
-                        <td>
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
-                                <button type="button" class="btn btn-danger">Eliminar</button>
-                            </div>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+                        <tr class="text-center align-middle">
+                            <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
+                            <td>2452515</td>
+                            <td>Pablo</td>
+                            <td>Casero Gutierrez</td>
+                            <td>45454347D</td>
+                            <td>Client</td>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
+                                    <button type="button" class="btn btn-danger">Eliminar</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="text-center align-middle">
+                            <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
+                            <td>2468616</td>
+                            <td>Victoria</td>
+                            <td>Martorell Munar</td>
+                            <td>45454514B</td>
+                            <td>Administrador</td>
+                            <td>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
+                                    <button type="button" class="btn btn-danger">Eliminar</button>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
+    <footer>
+        <div class="row py-3 bg-dark justify-content-around border-bottom border-light border-2">
+            <div class="col-md-3 col-12 my-3" id="map"></div>
+            <div class="col-md-3 col-5 my-3">
+                <h3 class="h5 mb-1 text-decoration-underline text-white">Coneixemos</h3>
+                <p class="small mb-1 text-white">Illes Balears</p>
+                <p class="small mb-1 text-white">C/Cami de s'es flors nº50, 07550</p>
+                <p class="small mb-1 text-white">Tel. Fixo: 971567812</p>
+                <p class="small mb-1 text-white">Tel. Movil: 667485213</p>
+                <p class="small mb-1 text-white">Email: fanbicis@gmail.com</p>
+                <a class="text-white text-decoration-none" href="/sobre-nosaltres" target="_blank"><p class="small mb-1">De nosaltres</p></a>
+            </div>
+            <div class="col-md-3 col-5 my-3">
+                <h3 class="h5 mb-1 text-decoration-underline text-white">Enllaços d'interes</h3>
+                <a class="text-white" href="https://www.ferrerhotels.com/travellost/rutas-ciclistas-de-mallorca/" target="_blank"><p class="small mb-1">Rutes de mallorca</p></a>
+                <a class="text-white" href="https://es.wikiloc.com/rutas/descenso-mtb/espana/illes-balears" target="_blank"><p class="small mb-1">Rutes de descens</p></a>
+                <a class="text-white" href="http://localhost:63342/Backend-private/static/html/index.html?_ijt=n0opdfa6u4d0htjd4edm6l440i&_ij_reload=RELOAD_ON_SAVE" target="_blank"><p class="small mb-1">Quina bici et va millor</p></a>
+                <a class="text-white" href="https://revista.dgt.es/es/educacion-formacion/reportajes/2021/0930-Normas-ciclistas.shtml" target="_blank"><p class="small mb-1">Normes al volant</p></a>
+                <a class="text-white" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Gastronomia damunt rodes</p></a>
+                <a class="text-white" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Coses interesants</p></a>
+            </div>
+        </div>
+        <div class="row bg-footer pt-3">
+            <div class="col-12 text-center">
+                <img src="/img/BikeTour250x141.webp" width="125" height="60" alt="...">
+            </div>
+            <div class="col-12 text-center">
+                <p class="text-white"> Copyright © 2015-2022 Mallorca Bike Tour</p>
+            </div>
+        </div>
+    </footer>
 </div>
-
-<footer class="row py-3 bg-dark justify-content-around border-bottom border-light border-2">
-    <div class="col-md-3 col-12 my-3" id="map"></div>
-    <div class="col-md-3 col-5 my-3">
-        <h3 class="h5 mb-1 text-decoration-underline text-white">Coneixemos</h3>
-        <p class="small mb-1 text-white">Illes Balears</p>
-        <p class="small mb-1 text-white">C/Cami de s'es flors nº50, 07550</p>
-        <p class="small mb-1 text-white">Tel. Fixo: 971567812</p>
-        <p class="small mb-1 text-white">Tel. Movil: 667485213</p>
-        <p class="small mb-1 text-white">Email: fanbicis@gmail.com</p>
-        <a class="text-white text-decoration-none" href="AdminInformacioEmpresa.html" target="_blank"><p class="small mb-1">De nosaltres</p></a>
-    </div>
-    <div class="col-md-3 col-5 my-3">
-        <h3 class="h5 mb-1 text-decoration-underline text-white">Enllaços d'interes</h3>
-        <a class="text-white" href="https://www.ferrerhotels.com/travellost/rutas-ciclistas-de-mallorca/" target="_blank"><p class="small mb-1">Rutes de mallorca</p></a>
-        <a class="text-white" href="https://es.wikiloc.com/rutas/descenso-mtb/espana/illes-balears" target="_blank"><p class="small mb-1">Rutes de descens</p></a>
-        <a class="text-white" href="http://localhost:63342/Backend-private/static/html/index.html?_ijt=n0opdfa6u4d0htjd4edm6l440i&_ij_reload=RELOAD_ON_SAVE" target="_blank"><p class="small mb-1">Quina bici et va millor</p></a>
-        <a class="text-white" href="https://revista.dgt.es/es/educacion-formacion/reportajes/2021/0930-Normas-ciclistas.shtml" target="_blank"><p class="small mb-1">Normes al volant</p></a>
-        <a class="text-white" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Gastronomia damunt rodes</p></a>
-        <a class="text-white" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Coses interesants</p></a>
-    </div>
-</footer>
-<footer class="row bg-footer pt-3">
-    <div class="col-12 text-center">
-        <img src="../static/img/BikeTour250x141.webp" width="125" height="60" alt="...">
-    </div>
-    <div class="col-12 text-center">
-        <p class="text-white"> Copyright © 2015-2022 Mallorca Bike Tour</p>
-    </div>
-
-</footer>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRLXnIEY1UHbKR-j8cOCKYQ3Ouk2NJ7ao&callback=initMap&v=weekly" async></script>
 <script>
     let map;
@@ -263,7 +271,6 @@
         });
     }
 </script>
-
 <script>
     let togg = true;
 

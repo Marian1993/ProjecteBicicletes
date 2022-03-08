@@ -74,6 +74,11 @@ $utilities-text-colors: map-merge($utilities-text-colors, $color-perso);
 .underline{
   border-bottom: 1px solid grey;
 }
+//Perque el footer es posi abaix
+body, .complet {
+  min-height: 100vh;
+}
+
 
 //Fons dels formularis
 

@@ -11,17 +11,17 @@
 <body class="container-fluid">
 <header class="row sticky-top border-bottom border-dark">
   <nav class="navbar navbar-expand-lg navbar-light bg-header py-1">
-    <div class="col-lg-5 col-12">
+    <div class="col-lg-4 col-12">
       <button class="navbar-toggler btn btn-sm border-2 border-dark px-2 me-1 shadow-none none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
         <span class="navbar-toggler-icon"></span>
       </button>
       <a href="/"><img src="/img/BikeTour250x141.webp" width="120" height="55" alt="..."></a>
       <a class="navbar-brand d-sm-inline d-none" href="/"><span class="h4">Mallorca Bike Tour</span></a>
     </div>
-    <div class="collapse navbar-collapse col-7 justify-content-end pe-4" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse col-8 justify-content-end pe-4" id="navbarSupportedContent">
       <ul class="navbar-nav mb-lg-0 gap-4">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/historial-productes">Productes</a>
+          <a class="nav-link active" aria-current="page" href="/">Productes</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/historial-usuaris">Usuaris</a>
@@ -31,6 +31,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/formulari-lloguer">Formulari lloguer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/historial-ventes">Historial Ventes</a>
         </li>
       </ul>
     </div>
@@ -43,7 +46,7 @@
     <div class="offcanvas-body">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link text-black" aria-current="page" href="/historial-productes">Productes</a>
+          <a class="nav-link text-black" aria-current="page" href="/">Productes</a>
         </li>
         <li class="nav-item">
           <a class="nav-link text-black" aria-current="page" href="/historial-usuaris">Usuaris</a>
@@ -54,92 +57,97 @@
         <li class="nav-item">
           <a class="nav-link text-black" href="/formulari-lloguer">Formulari lloguer</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link text-black" href="/historial-ventes">Historial Ventes</a>
+        </li>
       </ul>
     </div>
   </div>
 </header>
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-5 col-md-6 col-12 pb-4">
-        <h1>Valoracions</h1>
-        <div class="comment mt-4 text-justify float-left"><img src="/img/user.webp" alt=""
-                                                               class="rounded-circle" width="40" height="40">
-          <h4>Jhon Doe</h4> <span>- 17 Octubre, 2022</span> <br>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam
-            vero sequi velit molestias doloremque molestiae dicta?</p>
-        </div>
-        <div class="text-justify darker mt-4 float-right"><img src="/img/Volkan.webp" alt=""
-                                                               class="rounded-circle" width="40" height="40">
-          <h4>Volkan Moll</h4> <span>- 15 Febrer, 2022</span> <br>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam
-            vero sequi velit molestias doloremque molestiae dicta?</p>
-        </div>
-        <div class="comment mt-4 text-justify"><img src="/img/MariaA.webp" alt="" class="rounded-circle"
-                                                    width="40" height="40">
-          <h4>Maria Antònia</h4> <span>- 22 Abril, 2020</span> <br>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam
-            vero sequi velit molestias doloremque molestiae dicta?</p>
-        </div>
-        <div class="darker mt-4 text-justify"><img src="/img/Sebastia.webp" alt="" class="rounded-circle"
-                                                   width="40" height="40">
-          <h4>Sebastià Munar</h4> <span>- 22 Maig, 2022</span> <br>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam
-            vero sequi velit molestias doloremque molestiae dicta?</p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-5 col-sm-4 offset-md-1 offset-sm-1 col-12 mt-4">
-        <form id="algin-form">
-          <div class="form-group">
-            <h4>Leave a comment</h4> <label>Message</label> <textarea name="msg" id="" msg
-                                                                                    cols="30" rows="5"
-                                                                                    class="form-control"></textarea>
+<div class="d-flex justify-content-between flex-column complet">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 col-md-6 col-12 pb-4">
+          <h1>Valoracions</h1>
+          <div class="comment mt-4 text-justify float-left"><img src="/img/user.webp" alt=""
+                                                                 class="rounded-circle" width="40" height="40">
+            <h4>Jhon Doe</h4> <span>- 17 Octubre, 2022</span> <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam
+              vero sequi velit molestias doloremque molestiae dicta?</p>
           </div>
-          <div class="form-group"><label>Name</label> <input type="text" name="name" id="fullname"
-                                                                        class="form-control"></div>
-          <div class="form-group"><label for="email">Email</label> <input type="text" name="email" id="email"
+          <div class="text-justify darker mt-4 float-right"><img src="/img/Volkan.webp" alt=""
+                                                                 class="rounded-circle" width="40" height="40">
+            <h4>Volkan Moll</h4> <span>- 15 Febrer, 2022</span> <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam
+              vero sequi velit molestias doloremque molestiae dicta?</p>
+          </div>
+          <div class="comment mt-4 text-justify"><img src="/img/MariaA.webp" alt="" class="rounded-circle"
+                                                      width="40" height="40">
+            <h4>Maria Antònia</h4> <span>- 22 Abril, 2020</span> <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam
+              vero sequi velit molestias doloremque molestiae dicta?</p>
+          </div>
+          <div class="darker mt-4 text-justify"><img src="/img/Sebastia.webp" alt="" class="rounded-circle"
+                                                     width="40" height="40">
+            <h4>Sebastià Munar</h4> <span>- 22 Maig, 2022</span> <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus numquam assumenda hic aliquam
+              vero sequi velit molestias doloremque molestiae dicta?</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-5 col-sm-4 offset-md-1 offset-sm-1 col-12 mt-4">
+          <form id="algin-form">
+            <div class="form-group">
+              <h4>Leave a comment</h4> <label>Message</label> <textarea name="msg" id="" msg
+                                                                                      cols="30" rows="5"
+                                                                                      class="form-control"></textarea>
+            </div>
+            <div class="form-group"><label>Name</label> <input type="text" name="name" id="fullname"
                                                                           class="form-control"></div>
-          <div class="form-group">
-            <button type="button" id="post" class="btn btn-primary mt-3 float-end">Post Comment</button>
-          </div>
-        </form>
+            <div class="form-group"><label for="email">Email</label> <input type="text" name="email" id="email"
+                                                                            class="form-control"></div>
+            <div class="form-group">
+              <button type="button" id="post" class="btn btn-primary mt-3 float-end">Post Comment</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-<footer class="row py-3 bg-dark justify-content-around border-bottom border-light border-2">
-  <div class="col-md-3 col-12 my-3" id="map"></div>
-  <div class="col-md-3 col-5 my-3">
-    <h3 class="h5 mb-1 text-decoration-underline text-white">Coneixemos</h3>
-    <p class="small mb-1 text-white">Illes Balears</p>
-    <p class="small mb-1 text-white">C/Cami de s'es flors nº50, 07550</p>
-    <p class="small mb-1 text-white">Tel. Fixo: 971567812</p>
-    <p class="small mb-1 text-white">Tel. Movil: 667485213</p>
-    <p class="small mb-1 text-white">Email: fanbicis@gmail.com</p>
-    <a class="text-white text-decoration-none" href="AdminInformacioEmpresa.html" target="_blank"><p class="small mb-1">De nosaltres</p></a>
-  </div>
-  <div class="col-md-3 col-5 my-3">
-    <h3 class="h5 mb-1 text-decoration-underline text-white">Enllaços d'interes</h3>
-    <a class="text-white" href="https://www.ferrerhotels.com/travellost/rutas-ciclistas-de-mallorca/" target="_blank"><p class="small mb-1">Rutes de mallorca</p></a>
-    <a class="text-white" href="https://es.wikiloc.com/rutas/descenso-mtb/espana/illes-balears" target="_blank"><p class="small mb-1">Rutes de descens</p></a>
-    <a class="text-white" href="http://localhost:63342/Backend-private/static/html/index.html?_ijt=n0opdfa6u4d0htjd4edm6l440i&_ij_reload=RELOAD_ON_SAVE" target="_blank"><p class="small mb-1">Quina bici et va millor</p></a>
-    <a class="text-white" href="https://revista.dgt.es/es/educacion-formacion/reportajes/2021/0930-Normas-ciclistas.shtml" target="_blank"><p class="small mb-1">Normes al volant</p></a>
-    <a class="text-white" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Gastronomia damunt rodes</p></a>
-    <a class="text-white" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Coses interesants</p></a>
-  </div>
-</footer>
-<footer class="row bg-footer pt-3">
-  <div class="col-12 text-center">
-    <img src="/img/BikeTour250x141.webp" width="125" height="60" alt="...">
-  </div>
-  <div class="col-12 text-center">
-    <p class="text-white"> Copyright © 2015-2022 Mallorca Bike Tour</p>
-  </div>
-
-</footer>
+  </section>
+  <footer>
+    <div class="row py-3 bg-dark justify-content-around border-bottom border-light border-2">
+      <div class="col-md-3 col-12 my-3" id="map"></div>
+      <div class="col-md-3 col-5 my-3">
+        <h3 class="h5 mb-1 text-decoration-underline text-white">Coneixemos</h3>
+        <p class="small mb-1 text-white">Illes Balears</p>
+        <p class="small mb-1 text-white">C/Cami de s'es flors nº50, 07550</p>
+        <p class="small mb-1 text-white">Tel. Fixo: 971567812</p>
+        <p class="small mb-1 text-white">Tel. Movil: 667485213</p>
+        <p class="small mb-1 text-white">Email: fanbicis@gmail.com</p>
+        <a class="text-white text-decoration-none" href="/sobre-nosaltres" target="_blank"><p class="small mb-1">De nosaltres</p></a>
+      </div>
+      <div class="col-md-3 col-5 my-3">
+        <h3 class="h5 mb-1 text-decoration-underline text-white">Enllaços d'interes</h3>
+        <a class="text-white" href="https://www.ferrerhotels.com/travellost/rutas-ciclistas-de-mallorca/" target="_blank"><p class="small mb-1">Rutes de mallorca</p></a>
+        <a class="text-white" href="https://es.wikiloc.com/rutas/descenso-mtb/espana/illes-balears" target="_blank"><p class="small mb-1">Rutes de descens</p></a>
+        <a class="text-white" href="http://localhost:63342/Backend-private/static/html/index.html?_ijt=n0opdfa6u4d0htjd4edm6l440i&_ij_reload=RELOAD_ON_SAVE" target="_blank"><p class="small mb-1">Quina bici et va millor</p></a>
+        <a class="text-white" href="https://revista.dgt.es/es/educacion-formacion/reportajes/2021/0930-Normas-ciclistas.shtml" target="_blank"><p class="small mb-1">Normes al volant</p></a>
+        <a class="text-white" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Gastronomia damunt rodes</p></a>
+        <a class="text-white" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Coses interesants</p></a>
+      </div>
+    </div>
+    <div class="row bg-footer pt-3">
+      <div class="col-12 text-center">
+        <img src="/img/BikeTour250x141.webp" width="125" height="60" alt="...">
+      </div>
+      <div class="col-12 text-center">
+        <p class="text-white"> Copyright © 2015-2022 Mallorca Bike Tour</p>
+      </div>
+    </div>
+  </footer>
+</div>
 <script src="/js/bootstrap.bundle.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRLXnIEY1UHbKR-j8cOCKYQ3Ouk2NJ7ao&callback=initMap&v=weekly"
-        async></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRLXnIEY1UHbKR-j8cOCKYQ3Ouk2NJ7ao&callback=initMap&v=weekly" async></script>
 <script>
   let map;
 
