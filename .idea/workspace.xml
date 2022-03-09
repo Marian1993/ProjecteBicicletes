@@ -6,9 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="6aa16d35-7327-4a98-93bf-5495498d1924" name="Changes" comment="S'ha afegit sa part publica i algunes modificacions de planes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/AdminHistorialProductes.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/AdminHistorialProductes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/AdminValoracions.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/AdminValoracions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/HistorialClient.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/HistorialClient.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/InformacioEmpresa.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/InformacioEmpresa.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/PaginaPrincipal.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/PaginaPrincipal.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/bicyclePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/bicyclePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/carreto.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/carreto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/carretoProductesPerVendre.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/carretoProductesPerVendre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/formToPay.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/formToPay.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/paginaRegistre.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/paginaRegistre.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-public/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-public/static/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-public/static/paginaRegistre.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-public/static/paginaRegistre.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/productSalesPage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/productSalesPage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/rollerSkatePage.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/rollerSkatePage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/valoracions.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/valoracions.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +100,8 @@
       <workItem from="1644406790236" duration="35000" />
       <workItem from="1645810086986" duration="361000" />
       <workItem from="1645813961805" duration="27000" />
-      <workItem from="1646757455108" duration="9755000" />
+      <workItem from="1646757455108" duration="11134000" />
+      <workItem from="1646809610978" duration="4600000" />
     </task>
     <servers />
   </component>
