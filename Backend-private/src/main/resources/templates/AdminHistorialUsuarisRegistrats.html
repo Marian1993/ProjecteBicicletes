@@ -27,14 +27,13 @@
 <body class="bg-white container-fluid">
 <header class="row sticky-top border-bottom border-dark">
     <nav class="navbar navbar-expand-lg navbar-light bg-header py-1">
-        <div class="col-lg-4 col-12">
-            <button class="navbar-toggler btn btn-sm border-2 border-dark px-2 me-1 shadow-none none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a href="/"><img src="/img/BikeTour250x141.webp" width="120" height="55" alt="..."></a>
-            <a class="navbar-brand d-sm-inline d-none" href="/"><span class="h4">Mallorca Bike Tour</span></a>
+        <button class="navbar-toggler btn btn-sm border-2 border-dark px-2 me-1 shadow-none none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="/"><img src="/img/BikeTour250x141.webp" width="120" height="55" alt="..."></a>
+        <a class="navbar-brand d-sm-inline d-none" href="/"><span class="h4">Mallorca Bike Tour</span></a>
         </div>
-        <div class="collapse navbar-collapse col-8 justify-content-end pe-4" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse col-7 justify-content-end pe-4" id="navbarSupportedContent">
             <ul class="navbar-nav mb-lg-0 gap-4">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/">Productes</a>
@@ -51,6 +50,17 @@
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/historial-ventes">Historial Ventes</a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDrop2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu border-dark" aria-labelledby="navbarDrop2">
+                        <li><a class="dropdown-item" href="/">Tancar Sessio</a></li>
+                    </ul>
+                </li>
             </ul>
         </div>
     </nav>
@@ -61,6 +71,12 @@
         </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav">
+                <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link text-black" aria-current="page" href="/">Productes</a>
                 </li>
@@ -76,179 +92,198 @@
                 <li class="nav-item">
                     <a class="nav-link text-black" href="/historial-ventes">Historial Ventes</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link text-black" href="/">Tancar Sessio</a>
+                </li>
             </ul>
         </div>
     </div>
 </header>
 <div class="d-flex flex-column justify-content-between complet">
-    <div class="table-responsive mb-5">
-        <div class="text-center mb-4 bg-white p-2">
-            <h1 class="h1 my-4">Historial d'Usuaris Registrats</h1>
-            <div class="row col-md-12 col-sm-12 my-3 ">
-                <div class="col-md-2 col-sm-12 rounded-3 mt-3">
-                    <button onclick="location.href='/historial-usuaris/registrar'" class="btn btn-primary float-start">Crear Usuari</button>
+    <div>
+        <div class="table-responsive mb-5">
+            <div class="text-center mb-4 bg-white p-2">
+                <h1 class="h1 my-4">Historial d'Usuaris Registrats</h1>
+                <div class="row col-md-12 col-sm-12 my-3 ">
+                    <div class="col-md-2 col-sm-12 rounded-3 mt-3">
+                        <button onclick="location.href='/historial-usuaris/registrar'" class="btn btn-primary float-start">Crear Usuari</button>
+                    </div>
+                    <div class="col-md-10 col-sm-12 mb-3 mt-3">
+                        <div class="col-lg-3 col-sm-5 col-7">
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                                    </svg>
+                                </span>
+                                <input type="text" class="form-control" placeholder="Cercar" aria-label="Input group example" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-10 col-sm-12 mb-3 mt-3">
-                    <div class="col-lg-3 col-sm-5 col-7">
-                        <div class="input-group">
-                            <span class="input-group-text" id="basic-addon1">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
-                                </svg>
-                            </span>
-                            <input type="text" class="form-control" placeholder="Cercar" aria-label="Input group example" aria-describedby="basic-addon1">
+                <div class="row">
+                    <div class="col-md-12 col-sm-3">
+                        <div>
+                            <table class="table table-striped table-responsive w-100">
+                                <thead>
+                                <tr class="text-center">
+                                    <th scope="col" class="img">Foto</th>
+                                    <th scope="col">Nom <button class="border-0 bg-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
+                                    </svg></button></th>
+                                    <th scope="col">Primer Cognom <button class="border-0 bg-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
+                                    </svg></button></th>
+                                    <th scope="col">Segon Cognom <button class="border-0 bg-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
+                                    </svg></button></th>
+                                    <th scope="col">DNI <button class="border-0 bg-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
+                                    </svg></button></th>
+                                    <th scope="col">Rol <button class="border-0 bg-white"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
+                                    </svg></button></th>
+                                    <th scope="col">Accions</th>
+
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr class="text-center align-middle">
+                                    <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
+                                    <td>Alberto</td>
+                                    <td>Perez</td>
+                                    <td>Lopez</td>
+                                    <td>45454514B</td>
+                                    <td>Administrador</td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
+                                            <button type="button" class="btn btn-danger">Eliminar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="text-center align-middle">
+                                    <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
+                                    <td>Alicia</td>
+                                    <td>Fuentes</td>
+                                    <td>Garcia</td>
+                                    <td>45456784B</td>
+                                    <td>Treballador</td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
+                                            <button type="button" class="btn btn-danger">Eliminar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="text-center align-middle">
+                                    <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
+                                    <td>Manel</td>
+                                    <td>Llobera</td>
+                                    <td>Benassar</td>
+                                    <td>19275684B</td>
+                                    <td>Cliente</td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
+                                            <button type="button" class="btn btn-danger">Eliminar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="text-center align-middle">
+                                    <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
+                                    <td>Cristina</td>
+                                    <td>Amengual</td>
+                                    <td>Fuster</td>
+                                    <td>56238765C</td>
+                                    <td>Cliente</td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
+                                            <button type="button" class="btn btn-danger">Eliminar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="text-center align-middle">
+                                    <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
+                                    <td>Toni</td>
+                                    <td>Alzamora</td>
+                                    <td>Reus</td>
+                                    <td>15294845M</td>
+                                    <td>Treballador</td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
+                                            <button type="button" class="btn btn-danger">Eliminar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="text-center align-middle">
+                                    <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
+                                    <td>Marcos</td>
+                                    <td>Almodovar</td>
+                                    <td>Hernandez</td>
+                                    <td>41213345A</td>
+                                    <td>Administrador</td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
+                                            <button type="button" class="btn btn-danger">Eliminar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr class="text-center align-middle">
+                                    <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
+                                    <td>Pablo</td>
+                                    <td>Casero</td>
+                                    <td>Gutierrez</td>
+                                    <td>45454347D</td>
+                                    <td>Client</td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
+                                            <button type="button" class="btn btn-danger">Eliminar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="text-center align-middle">
+                                    <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
+                                    <td>Victoria</td>
+                                    <td>Martorell</td>
+                                    <td>Munar</td>
+                                    <td>45454514B</td>
+                                    <td>Administrador</td>
+                                    <td>
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
+                                            <button type="button" class="btn btn-danger">Eliminar</button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12 col-sm-3">
-                    <div>
-                        <table class="table table-striped table-responsive w-100">
-                            <thead>
-                            <tr class="text-center">
-                                <th scope="col" class="img">Foto</th>
-                                <th scope="col">ID</th>
-                                <th scope="col">Nom</th>
-                                <th scope="col">Primer Cognom</th>
-                                <th scope="col">Segon Cognom</th>
-                                <th scope="col">DNI</th>
-                                <th scope="col">Rol</th>
-                                <th scope="col">Accions</th>
-
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr class="text-center align-middle">
-                                <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
-                                <td>2682445</td>
-                                <td>Alberto</td>
-                                <td>Perez</td>
-                                <td>Lopez</td>
-                                <td>45454514B</td>
-                                <td>Administrador</td>
-                                <td>
-                                    <div class="btn-group" role="group" aria-label="Basic example">
-                                        <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
-                                        <button type="button" class="btn btn-danger">Eliminar</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="text-center align-middle">
-                                <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
-                                <td>2432564</td>
-                                <td>Alicia</td>
-                                <td>Fuentes</td>
-                                <td>Garcia</td>
-                                <td>45456784B</td>
-                                <td>Treballador</td>
-                                <td>
-                                    <div class="btn-group" role="group" aria-label="Basic example">
-                                        <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
-                                        <button type="button" class="btn btn-danger">Eliminar</button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr class="text-center align-middle">
-                                <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
-                                <td>2452445</td>
-                                <td>Manel</td>
-                                <td>Llobera</td>
-                                <td>Benassar</td>
-                                <td>19275684B</td>
-                                <td>Cliente</td>
-                                <td>
-                                    <div class="btn-group" role="group" aria-label="Basic example">
-                                        <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
-                                        <button type="button" class="btn btn-danger">Eliminar</button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr class="text-center align-middle">
-                                <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
-                                <td>9682445</td>
-                                <td>Cristina</td>
-                                <td>Amengual</td>
-                                <td>Fuster</td>
-                                <td>56238765C</td>
-                                <td>Cliente</td>
-                                <td>
-                                    <div class="btn-group" role="group" aria-label="Basic example">
-                                        <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
-                                        <button type="button" class="btn btn-danger">Eliminar</button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr class="text-center align-middle">
-                                <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
-                                <td>2452665</td>
-                                <td>Toni</td>
-                                <td>Alzamora</td>
-                                <td>Reus</td>
-                                <td>15294845M</td>
-                                <td>Treballador</td>
-                                <td>
-                                    <div class="btn-group" role="group" aria-label="Basic example">
-                                        <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
-                                        <button type="button" class="btn btn-danger">Eliminar</button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr class="text-center align-middle">
-                                <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
-                                <td>9865327</td>
-                                <td>Marcos</td>
-                                <td>Almodovar</td>
-                                <td>Hernandez</td>
-                                <td>41213345A</td>
-                                <td>Administrador</td>
-                                <td>
-                                    <div class="btn-group" role="group" aria-label="Basic example">
-                                        <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
-                                        <button type="button" class="btn btn-danger">Eliminar</button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <tr class="text-center align-middle">
-                                <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
-                                <td>2452515</td>
-                                <td>Pablo</td>
-                                <td>Casero</td>
-                                <td>Gutierrez</td>
-                                <td>45454347D</td>
-                                <td>Client</td>
-                                <td>
-                                    <div class="btn-group" role="group" aria-label="Basic example">
-                                        <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
-                                        <button type="button" class="btn btn-danger">Eliminar</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr class="text-center align-middle">
-                                <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/> </td>
-                                <td>2468616</td>
-                                <td>Victoria</td>
-                                <td>Martorell</td>
-                                <td>Munar</td>
-                                <td>45454514B</td>
-                                <td>Administrador</td>
-                                <td>
-                                    <div class="btn-group" role="group" aria-label="Basic example">
-                                        <button onclick="location.href='/historial-usuaris/modificar'" type="button" class="btn btn-primary">Editar</button>
-                                        <button type="button" class="btn btn-danger">Eliminar</button>
-                                    </div>
-                                </td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div class="text-center">
+            <ul class="pagination">
+                <li><a href="#">«</a></li>
+                <li><a class="active" href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">6</a></li>
+                <li><a href="#">7</a></li>
+                <li><a href="#">»</a></li>
+            </ul>
         </div>
     </div>
     <footer>
