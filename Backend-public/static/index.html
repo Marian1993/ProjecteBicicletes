@@ -4,8 +4,10 @@
 <head>
     <title>Pagina principal</title>
     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="scss/custom.scss">
+    <link rel="manifest" href="manifest.json">
 </head>
 
 
@@ -140,6 +142,16 @@
         map = new google.maps.Map(document.getElementById("map"), {
             center: { lat: 39.71358, lng: 3.46076 },
             zoom: 20,
+        });
+    }
+</script>
+<script type="module">
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+            navigator.serviceWorker.register(
+                new URL('sw.js', import.meta.url),
+                {type:'module'}
+            );
         });
     }
 </script>

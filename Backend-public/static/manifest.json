@@ -1,0 +1,19 @@
+{
+    "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+    "id": "Bicicletes",
+    "name": "Lloguer Bicicletes",
+    "short_name": "Bicicletes",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "A readable Hacker News app.",
+    "icons": [{
+      "src": "./img/bicicletx48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    }, {
+      "src": "./img/bicicletax144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }]
+  }

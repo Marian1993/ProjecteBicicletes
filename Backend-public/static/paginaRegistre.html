@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina de Registro</title>
-    <link rel="stylesheet" href="./css/custom.css">
+    <link rel="stylesheet" href="css/custom.css">
 </head>
 <body class="fons container-fluid">
 <header class="row sticky-top border-bottom border-dark">
@@ -84,16 +84,28 @@
                 <input id="inputname" type="text" class="form-control" placeholder="First name" aria-label="Nom" required>
             </div>
             <div class="col-md-6 col-12">
-                <label for="inputlastname" class="form-label">Cognoms</label>
-                <input id="inputlastname" type="text" class="form-control" placeholder="Last name" aria-label="Cognoms" required>
+                <label for="inputlastname1" class="form-label">Primer Cognom</label>
+                <input id="inputlastname1" type="text" class="form-control" placeholder="Last name" aria-label="Cognoms" required>
             </div>
             <div class="col-md-6 col-12">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" required>
+                <label for="inputlastname2" class="form-label">Segon Cognom(opcional)</label>
+                <input id="inputlastname2" type="text" class="form-control" placeholder="Last name" aria-label="Cognoms">
             </div>
             <div class="col-md-6 col-12">
                 <label for="inputEmail4" class="form-label">Email</label>
                 <input type="email" class="form-control" id="inputEmail4" required>
+            </div>
+            <div class="col-md-6 col-12">
+                <label for="exampleInputPassword1" class="form-label">Contrasenya</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" required>
+            </div>
+            <div class="col-md-6 col-12">
+                <label for="exampleInputPassword2" class="form-label">Confirmar contrasenya</label>
+                <input type="password" class="form-control" id="exampleInputPassword2" required>
+            </div>
+            <div class="col-md-6 col-12">
+                <label for="inputCity" class="form-label">Ciutat</label>
+                <input type="text" class="form-control" id="inputCity" required>
             </div>
             <div class="col-md-4 col-6">
                 <label for="inputState" class="form-label">Provincia</label>
@@ -114,24 +126,16 @@
                 <input type="text" class="form-control" id="inputAddress" placeholder="C/ Palomo Cojo Nº67" required>
             </div>
             <div class="col-md-6 col-12">
-                <label for="inputAddress2" class="form-label">2ª Direcció (OPCIONAL)</label>
-                <input type="text" class="form-control" id="inputAddress2" placeholder="Escriba su segunda residencia" required>
-            </div>
-            <div class="col-6">
                 <label for="exampleInputnum" class="form-label">Teléfono</label>
                 <input type="text" class="form-control" id="exampleInputnum" required>
-            </div>
-            <div class="col-6">
-                <label for="inputCity" class="form-label">Ciutat</label>
-                <input type="text" class="form-control" id="inputCity" required>
             </div>
             <div class="col-12">
                 <button type="submit" class="btn btn-primary float-end">Guardar canvis</button>
                 <a class="btn btn-danger float-end me-3" href="./login.html">Cancelar</a>
             </div>
         </form>
-    </div></div>
-<footer>
+    </div>
+    <footer>
     <div class="row py-3 bg-dark justify-content-around border-bottom border-light border-2">
         <div class="col-md-3 col-12 my-3" id="map"></div>
         <div class="col-md-3 col-5 my-3">
@@ -162,8 +166,8 @@
         </div>
     </div>
 </footer>
-
-<script src="../js/bootstrap.bundle.js"></script>
+</div>
+<script src="js/bootstrap.bundle.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRLXnIEY1UHbKR-j8cOCKYQ3Ouk2NJ7ao&callback=initMap&v=weekly" async></script>
 <script>
     let map;
