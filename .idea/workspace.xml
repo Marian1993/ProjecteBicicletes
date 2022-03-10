@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6aa16d35-7327-4a98-93bf-5495498d1924" name="Changes" comment="S'ha afegit sa part publica i algunes modificacions de planes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/templateHeader.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-private/src/main/resources/static/html/templateHeader.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend-public/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-public/static/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +53,7 @@
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -90,6 +91,8 @@
       <workItem from="1645813961805" duration="27000" />
       <workItem from="1646757455108" duration="11134000" />
       <workItem from="1646809610978" duration="8264000" />
+      <workItem from="1646903053530" duration="282000" />
+      <workItem from="1646905757027" duration="331000" />
     </task>
     <servers />
   </component>
@@ -106,6 +109,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="S'ha afegit sa part publica i algunes modificacions de planes" />
