@@ -33,14 +33,14 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="/historial-ventes">Historial Ventes</a>
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropstart">
           <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDrop2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
               <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
               <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
             </svg>
           </a>
-          <ul class="dropdown-menu border-dark" aria-labelledby="navbarDrop2">
+          <ul class="dropdown-menu border-dark mt-5" aria-labelledby="navbarDrop2">
             <li><a class="dropdown-item" href="/">Tancar Sessio</a></li>
           </ul>
         </li>
@@ -93,12 +93,20 @@
         <input id="inputname" type="text" class="form-control" placeholder="First name" aria-label="Nom" required>
       </div>
       <div class="col-md-6 col-12">
-        <label for="inputlastname" class="form-label">Cognoms</label>
-        <input id="inputlastname" type="text" class="form-control" placeholder="Last name" aria-label="Cognoms" required>
+        <label for="inputlastname1" class="form-label">Primer Cognom</label>
+        <input id="inputlastname1" type="text" class="form-control" placeholder="Last name" aria-label="Cognoms" required>
+      </div>
+      <div class="col-md-6 col-12">
+        <label for="inputlastname2" class="form-label">Segon Cognom(opcional)</label>
+        <input id="inputlastname2" type="text" class="form-control" placeholder="Last name" aria-label="Cognoms">
       </div>
       <div class="col-md-6 col-12">
         <label for="inputEmail4" class="form-label">Email</label>
         <input type="email" class="form-control" id="inputEmail4" required>
+      </div>
+      <div class="col-md-6 col-12">
+        <label for="inputCity" class="form-label">Ciutat</label>
+        <input type="text" class="form-control" id="inputCity" required>
       </div>
       <div class="col-md-4 col-6">
         <label for="inputState" class="form-label">Provincia</label>
@@ -119,20 +127,12 @@
         <input type="text" class="form-control" id="inputAddress" placeholder="C/ Palomo Cojo Nº67" required>
       </div>
       <div class="col-md-6 col-12">
-        <label for="inputAddress2" class="form-label">2ª Direcció (OPCIONAL)</label>
-        <input type="text" class="form-control" id="inputAddress2" placeholder="Escriba su segunda residencia">
-      </div>
-      <div class="col-6">
         <label for="exampleInputnum" class="form-label">Teléfono</label>
         <input type="text" class="form-control" id="exampleInputnum" required>
       </div>
-      <div class="col-6">
-        <label for="inputCity" class="form-label">Ciutat</label>
-        <input type="text" class="form-control" id="inputCity" required>
-      </div>
       <div class="col-12">
         <button type="submit" class="btn btn-primary float-end">Guardar canvis</button>
-        <a class="btn btn-danger float-end me-3" href="/historial-usuaris">Cancelar</a>
+        <a class="btn btn-danger float-end me-3" href="./login.html">Cancelar</a>
       </div>
     </form>
   </div>
