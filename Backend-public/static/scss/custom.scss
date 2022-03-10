@@ -177,3 +177,10 @@ button:nth-child(5):hover ~ button {
 
 //Fonts importades
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+//fons per InformaciióEmpresa
+#adalt {
+  background-image: url('../img/fons.webp');
+  background-repeat: no-repeat;
+  height: 600px;
+}

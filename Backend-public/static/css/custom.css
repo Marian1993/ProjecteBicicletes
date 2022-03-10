@@ -18880,3 +18880,9 @@ button:nth-child(5):hover ~ button {
   color: var(--color-hover);
   transform: rotate(360deg);
 }
+
+#adalt {
+  background-image: url('../img/fons.webp');
+  background-repeat: no-repeat;
+  height: 600px;
+}
