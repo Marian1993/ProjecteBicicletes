@@ -1,0 +1,24 @@
+{
+  "name": "projectebicicletes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marian1993/ProjecteBicicletes.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marian1993/ProjecteBicicletes/issues"
+  },
+  "homepage": "https://github.com/Marian1993/ProjecteBicicletes#readme",
+  "dependencies": {
+    "@parcel/packager-raw-url": "^2.3.2",
+    "@parcel/service-worker": "^2.3.3-nightly.2633",
+    "@parcel/transformer-webmanifest": "^2.3.2"
+  }
+}

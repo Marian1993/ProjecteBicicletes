@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6aa16d35-7327-4a98-93bf-5495498d1924" name="Changes" comment="S'ha afegit sa part publica i algunes modificacions de planes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-public/static/InformacioEmpresa.html" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-public/static/InformacioEmpresa.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-public/static/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-public/static/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend-public/static/scss/custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-public/static/scss/custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend-public/static/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Backend-public/static/manifest.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,19 +61,6 @@
       <recent name="C:\Users\volka\Desktop\ProjecteBicicletes\Backend-private\src\main\resources\static\html" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -108,7 +93,9 @@
       <workItem from="1646757455108" duration="11134000" />
       <workItem from="1646809610978" duration="8264000" />
       <workItem from="1646903053530" duration="282000" />
-      <workItem from="1646905757027" duration="1595000" />
+      <workItem from="1646905757027" duration="1818000" />
+      <workItem from="1646907686405" duration="143000" />
+      <workItem from="1646907970147" duration="702000" />
     </task>
     <servers />
   </component>

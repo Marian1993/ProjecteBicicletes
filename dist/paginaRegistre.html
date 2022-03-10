@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Registro</title>
+    <link rel="stylesheet" href="/index.8df0109e.css">
+</head>
+<body class="fons container-fluid">
+<header class="row sticky-top border-bottom border-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-header py-1">
+        <div class="col-lg-5 col-12">
+            <button class="navbar-toggler btn btn-sm border-2 border-dark px-2 me-1 shadow-none none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a href="/index.html"><img src="/BikeTour250x141.81747f41.webp" width="120px" height="55px" alt="..."></a>
+            <a class="navbar-brand d-sm-inline d-none" href="/index.html"><span class="h4">Mallorca Bike Tour</span></a>
+        </div>
+        <div class="collapse navbar-collapse col-7 justify-content-end pe-4" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-lg-0 gap-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lloguer</a>
+                    <ul class="dropdown-menu border-dark" aria-labelledby="navbarDrop">
+                        <li><a class="dropdown-item" href="/bicyclePage.html">Bicicletes</a></li>
+                        <li><a class="dropdown-item" href="/rollerSkatePage.html">Patinets</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/productSalesPage.html">Venta</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/valoracions.html">Valoracions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/login.html">Inicia sessió</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop" aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBackdropLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav">
+                <li class="accordion pb-2" id="accordionExample">
+                    <div class="accordion-item border-0">
+                        <p class="accordion-header" id="headingOne">
+                            <button class="collapsed border-0 bg-white p-0 dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Lloguer
+                            </button>
+                        </p>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <ul class="accordion-body pb-0 pt-1">
+                                <li class="pb-1"><a class="text-black text-decoration-none" href="/bicyclePage.html">Bicicletes</a></li>
+                                <li><a class="text-black text-decoration-none" href="/rollerSkatePage.html">Patinets</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="/productSalesPage.html">Venta</a>
+                </li>
+                <li>
+                    <a class="nav-link text-dark" href="/valoracions.html">Valoracions</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" href="/login.html">Inicia sessió</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="d-flex justify-content-between flex-column complet">
+    <div class="col-8 my-4 rounded-3 p-4 bg-white" style="margin:auto">
+        <div class=" col-12 justify-content-md-center">
+            <h1 class="h1 text-center mt-2 mb-4">Crear Usuari</h1>
+        </div>
+        <form class="row g-3 needs-validation" novalidate="">
+            <div class="col-md-6 col-12">
+                <label for="inputname" class="form-label">Nom</label>
+                <input id="inputname" type="text" class="form-control" placeholder="First name" aria-label="Nom" required="">
+            </div>
+            <div class="col-md-6 col-12">
+                <label for="inputlastname1" class="form-label">Primer Cognom</label>
+                <input id="inputlastname1" type="text" class="form-control" placeholder="Last name" aria-label="Cognoms" required="">
+            </div>
+            <div class="col-md-6 col-12">
+                <label for="inputlastname2" class="form-label">Segon Cognom(opcional)</label>
+                <input id="inputlastname2" type="text" class="form-control" placeholder="Last name" aria-label="Cognoms">
+            </div>
+            <div class="col-md-6 col-12">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" required="">
+            </div>
+            <div class="col-md-6 col-12">
+                <label for="exampleInputPassword1" class="form-label">Contrasenya</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" required="">
+            </div>
+            <div class="col-md-6 col-12">
+                <label for="exampleInputPassword2" class="form-label">Confirmar contrasenya</label>
+                <input type="password" class="form-control" id="exampleInputPassword2" required="">
+            </div>
+            <div class="col-md-6 col-12">
+                <label for="inputCity" class="form-label">Ciutat</label>
+                <input type="text" class="form-control" id="inputCity" required="">
+            </div>
+            <div class="col-md-4 col-6">
+                <label for="inputState" class="form-label">Provincia</label>
+                <select id="inputState" class="form-select" required="">
+                    <option value="" selected="" disabled="">Elegeix</option>
+                    <option value="Baleares">Balears</option>
+                    <option value="Valencia">Valencia</option>
+                    <option value="Catalunya">Catalunya</option>
+                    <option value="Arago">Arago</option>
+                </select>
+            </div>
+            <div class="col-md-2 col-6">
+                <label for="inputZip" class="form-label">Codi Postal</label>
+                <input type="text" class="form-control" id="inputZip" required="">
+            </div>
+            <div class="col-md-6 col-12">
+                <label for="inputAddress" class="form-label">Direcció</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="C/ Palomo Cojo Nº67" required="">
+            </div>
+            <div class="col-md-6 col-12">
+                <label for="exampleInputnum" class="form-label">Teléfono</label>
+                <input type="text" class="form-control" id="exampleInputnum" required="">
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary float-end">Guardar canvis</button>
+                <a class="btn btn-danger float-end me-3" href="/login.html">Cancelar</a>
+            </div>
+        </form>
+    </div>
+    <footer>
+    <div class="row py-3 bg-dark justify-content-around border-bottom border-light border-2">
+        <div class="col-md-3 col-12 my-3" id="map"></div>
+        <div class="col-md-3 col-5 my-3">
+            <h3 class="h5 mb-1 text-decoration-underline text-white">Coneixemos</h3>
+            <p class="small mb-1 text-white">Illes Balears</p>
+            <p class="small mb-1 text-white">C/Cami de s'es flors nº50, 07550</p>
+            <p class="small mb-1 text-white">Tel. Fixo: 971567812</p>
+            <p class="small mb-1 text-white">Tel. Movil: 667485213</p>
+            <p class="small mb-1 text-white">Email: fanbicis@gmail.com</p>
+            <a class="text-white text-decoration-none" href="/InformacioEmpresa.html" target="_blank"><p class="small mb-1">De nosaltres</p></a>
+        </div>
+        <div class="col-md-3 col-5 my-3">
+            <h3 class="h5 mb-1 text-decoration-underline text-white">Enllaços d'interes</h3>
+            <a class="text-white" href="https://www.ferrerhotels.com/travellost/rutas-ciclistas-de-mallorca/" target="_blank"><p class="small mb-1">Rutes de mallorca</p></a>
+            <a class="text-white" href="https://es.wikiloc.com/rutas/descenso-mtb/espana/illes-balears" target="_blank"><p class="small mb-1">Rutes de descens</p></a>
+            <a class="text-white" href="http://localhost:63342/Backend-private/static/html/index.html?_ijt=n0opdfa6u4d0htjd4edm6l440i&_ij_reload=RELOAD_ON_SAVE" target="_blank"><p class="small mb-1">Quina bici et va millor</p></a>
+            <a class="text-white" href="https://revista.dgt.es/es/educacion-formacion/reportajes/2021/0930-Normas-ciclistas.shtml" target="_blank"><p class="small mb-1">Normes al volant</p></a>
+            <a class="text-white" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Gastronomia damunt rodes</p></a>
+            <a class="text-white" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Coses interesants</p></a>
+        </div>
+    </div>
+    <div class="row bg-footer pt-3">
+        <div class="col-12 text-center">
+            <img src="/BikeTour250x141.81747f41.webp" width="125" height="60" alt="...">
+        </div>
+        <div class="col-12 text-center">
+            <p class="text-white"> Copyright © 2015-2022 Mallorca Bike Tour</p>
+        </div>
+    </div>
+</footer>
+</div>
+<script src="/InformacioEmpresa.7cacd354.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRLXnIEY1UHbKR-j8cOCKYQ3Ouk2NJ7ao&callback=initMap&v=weekly" async=""></script>
+<script>let map;
+function initMap() {
+    map = new google.maps.Map(document.getElementById("map"), {
+        center: {
+            lat: 39.71358,
+            lng: 3.46076
+        },
+        zoom: 20
+    });
+}
+
+</script>
+
+
+<script>(function() {
+    var forms = document.querySelectorAll('.needs-validation');
+    Array.prototype.slice.call(forms).forEach(function(form) {
+        form.addEventListener('submit', function(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            if (form.checkValidity()) window.location.href = "login.html";
+            form.classList.add('was-validated');
+        }, false);
+    });
+})();
+
+</script>
+</body>
+</html>
