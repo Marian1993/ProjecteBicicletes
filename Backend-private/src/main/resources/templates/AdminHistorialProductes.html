@@ -41,22 +41,45 @@
             <button class="navbar-toggler btn btn-sm border-2 border-dark px-2 me-1 shadow-none none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop" aria-controls="offcanvasWithBackdrop">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a href="/"><img src="/img/BikeTour250x141.webp" width="120" height="55" alt="..."></a>
-            <a class="navbar-brand d-sm-inline d-none" href="/"><span class="h4">Mallorca Bike Tour</span></a>
+            <a href="PaginaPrincipal.html"><img src="../img/BikeTour250x141.webp" width="120" height="55" alt="..."></a>
+            <a class="navbar-brand d-sm-inline d-none" href="PaginaPrincipal.html"><span class="h4">Mallorca Bike Tour</span></a>
         </div>
         <div class="collapse navbar-collapse col-7 justify-content-end pe-4" id="navbarSupportedContent">
             <ul class="navbar-nav mb-lg-0 gap-4">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/historial-productes">Productes</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDrop" role="button" data-bs-toggle="dropdown" aria-expanded="false">Lloguer</a>
+                    <ul class="dropdown-menu border-dark" aria-labelledby="navbarDrop">
+                        <li><a class="dropdown-item" href="bicyclePage.html">Bicicletes</a></li>
+                        <li><a class="dropdown-item" href="rollerSkatePage.html">Patinets</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/historial-usuaris">Usuaris</a>
+                    <a class="nav-link active" aria-current="page" href="productSalesPage.html">Venta</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDrop1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Carreto</a>
+                    <ul class="dropdown-menu border-dark" aria-labelledby="navbarDro1">
+                        <li><a class="dropdown-item" href="carreto.html">Lloguer</a></li>
+                        <li><a class="dropdown-item" href="carretoProductesPerVendre.html">Venta</a></li>
+                    </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/valoracions">Valoracions</a>
+                    <a class="nav-link active" aria-current="page" href="valoracions.html">Valoracions</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/formulari-lloguer">Formulari lloguer</a>
+                    <a class="nav-link active" aria-current="page" href="HistorialClient.html">Historial</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-black" href="#" id="navbarDrop2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                    </a>
+                    <ul class="dropdown-menu border-dark" aria-labelledby="navbarDrop2">
+                        <li><a class="dropdown-item" href="modificarUsuari.html">Modificar</a></li>
+                        <li><a class="dropdown-item" href="login.html">Tancar Sessio</a></li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -68,17 +91,62 @@
         </div>
         <div class="offcanvas-body">
             <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link text-black" aria-current="page" href="/historial-productes">Productes</a>
+                <li class="accordion pb-2" id="accordionExample3">
+                    <div class="accordion-item border-0">
+                        <p class="accordion-header" id="headingThree">
+                            <button class="collapsed border-0 bg-white p-0 dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                                </svg>
+                            </button>
+                        </p>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample3">
+                            <ul class="accordion-body pb-0 pt-1">
+                                <li class="pb-1"><a class="text-black text-decoration-none" href="modificarUsuari.html">Modificar</a></li>
+                                <li><a class="text-black text-decoration-none" href="login.html">Tancar Sessio</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="accordion pb-2" id="accordionExample">
+                    <div class="accordion-item border-0">
+                        <p class="accordion-header" id="headingOne">
+                            <button class="collapsed border-0 bg-white p-0 dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                Lloguer
+                            </button>
+                        </p>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <ul class="accordion-body pb-0 pt-1">
+                                <li class="pb-1"><a class="text-black text-decoration-none" href="bicyclePage.html">Bicicletes</a></li>
+                                <li><a class="text-black text-decoration-none" href="rollerSkatePage.html">Patinets</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-black" aria-current="page" href="/historial-usuaris">Usuaris</a>
+                    <a class="nav-link text-dark" href="productSalesPage.html">Venta</a>
+                </li>
+                <li class="accordion pb-2" id="accordionExample2">
+                    <div class="accordion-item border-0">
+                        <p class="accordion-header" id="headingTwo">
+                            <button class="collapsed border-0 bg-white p-0 dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Carreto
+                            </button>
+                        </p>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample2">
+                            <ul class="accordion-body pb-0 pt-1">
+                                <li class="pb-1"><a class="text-black text-decoration-none" href="bicyclePage.html">Lloguer</a></li>
+                                <li><a class="text-black text-decoration-none" href="rollerSkatePage.html">Venta</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
                 <li>
-                    <a class="nav-link text-black" href="/valoracions">Valoracions</a>
+                    <a class="nav-link text-dark" href="valoracions.html">Valoracions</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-black" href="/formulari-lloguer">Formulari lloguer</a>
+                    <a class="nav-link text-dark" href="HistorialClient.html">Historial</a>
                 </li>
             </ul>
         </div>
@@ -507,12 +575,14 @@
                         <td>0%</td>
                         <td>3</td>
                         <td class="text-right">
-                            <button class="btn btn-success" onclick="changeClass(this);"><i
-                                    class="fa fa-trash"></i></button>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"/>
+                            </div>
                         </td>
                         <td class="text-left">
-                            <button class="btn btn-success" onclick="changeClass(this);"><i
-                                    class="fa fa-trash"></i></button>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"/>
+                            </div>
                         </td>
                         <td>
                             <div class="btn-group">
@@ -526,21 +596,23 @@
                     </tr>
                     <tr class="text-center align-middle">
                         <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/></td>
-                        <td>Cannondale GT35</td>
+                        <td>Cannondale A3</td>
                         <td>Cannondale</td>
-                        <td>BMX</td>
+                        <td>Carretera</td>
                         <td class="text-right">L</td>
                         <td class="text-right">Negre</td>
-                        <td>Gamma alta</td>
+                        <td>Gamma mitja</td>
                         <td>0%</td>
-                        <td>24</td>
+                        <td>3</td>
                         <td class="text-right">
-                            <button class="btn btn-success" onclick="changeClass(this);"><i
-                                    class="fa fa-trash"></i></button>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"/>
+                            </div>
                         </td>
                         <td class="text-left">
-                            <button class="btn btn-success" onclick="changeClass(this);"><i
-                                    class="fa fa-trash"></i></button>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"/>
+                            </div>
                         </td>
                         <td>
                             <div class="btn-group">
@@ -554,21 +626,53 @@
                     </tr>
                     <tr class="text-center align-middle">
                         <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/></td>
-                        <td>Cannondale T78</td>
-                        <td>Cannondale</td>
-                        <td>Passeig</td>
-                        <td class="text-right">S</td>
-                        <td class="text-right">Negre</td>
-                        <td>Gamma baixa</td>
+                        <td>Feld</td>
+                        <td>Feld FX300</td>
+                        <td>Mountainbike</td>
+                        <td class="text-right">L</td>
+                        <td class="text-right">Blau</td>
+                        <td>Gamma alta</td>
                         <td>0%</td>
-                        <td>14</td>
+                        <td>1</td>
                         <td class="text-right">
-                            <button class="btn btn-success" onclick="changeClass(this);"><i
-                                    class="fa fa-trash"></i></button>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"/>
+                            </div>
                         </td>
                         <td class="text-left">
-                            <button class="btn btn-success" onclick="changeClass(this);"><i
-                                    class="fa fa-trash"></i></button>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"/>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modificarProducte">Modificar</button>
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                        data-bs-target="#borrarProducte">Eliminar
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="text-center align-middle">
+                        <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/></td>
+                        <td>Giant</td>
+                        <td>Giant Th3A</td>
+                        <td>Mountainbike</td>
+                        <td class="text-right">S</td>
+                        <td class="text-right">Verd</td>
+                        <td>Gamma mitja</td>
+                        <td>0%</td>
+                        <td>4</td>
+                        <td class="text-right">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"/>
+                            </div>
+                        </td>
+                        <td class="text-left">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"/>
+                            </div>
                         </td>
                         <td>
                             <div class="btn-group">
@@ -610,12 +714,14 @@
                         <td>0%</td>
                         <td>10</td>
                         <td class="text-right">
-                            <button class="btn btn-success" onclick="changeClass(this);"><i
-                                    class="fa fa-trash"></i></button>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"/>
+                            </div>
                         </td>
                         <td class="text-left">
-                            <button class="btn btn-success" onclick="changeClass(this);"><i
-                                    class="fa fa-trash"></i></button>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"/>
+                            </div>
                         </td>
                         <td>
                             <div class="btn-group">
@@ -629,21 +735,23 @@
                     </tr>
                     <tr class="text-center align-middle">
                         <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/></td>
-                        <td>Xiaomi G3</td>
-                        <td>Blunt</td>
+                        <td>Razor XQC</td>
+                        <td>Razor</td>
                         <td>Elèctric</td>
-                        <td class="text-right">L</td>
+                        <td class="text-right">XS</td>
                         <td class="text-right">Negre</td>
                         <td>25-30 km</td>
                         <td>0%</td>
                         <td>7</td>
                         <td class="text-right">
-                            <button class="btn btn-success" onclick="changeClass(this);"><i
-                                    class="fa fa-trash"></i></button>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"/>
+                            </div>
                         </td>
                         <td class="text-left">
-                            <button class="btn btn-success" onclick="changeClass(this);"><i
-                                    class="fa fa-trash"></i></button>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"/>
+                            </div>
                         </td>
                         <td>
                             <div class="btn-group">
@@ -657,21 +765,83 @@
                     </tr>
                     <tr class="text-center align-middle">
                         <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/></td>
-                        <td>Xiaomi G4</td>
-                        <td>Blunt</td>
+                        <td>HomCom Hallway</td>
+                        <td>HomCom</td>
+                        <td>Elèctric</td>
+                        <td class="text-right">M</td>
+                        <td class="text-right">Negre</td>
+                        <td>25-30 km</td>
+                        <td>0%</td>
+                        <td>3</td>
+                        <td class="text-right">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"/>
+                            </div>
+                        </td>
+                        <td class="text-left">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"/>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modificarProducte">Modificar</button>
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                        data-bs-target="#borrarProducte">Eliminar
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="text-center align-middle">
+                        <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/></td>
+                        <td>HomCom Hionchin</td>
+                        <td>HomCom</td>
                         <td>Elèctric</td>
                         <td class="text-right">L</td>
                         <td class="text-right">Negre</td>
                         <td>25-30 km</td>
                         <td>0%</td>
-                        <td>1</td>
+                        <td>5</td>
                         <td class="text-right">
-                            <button class="btn btn-success" onclick="changeClass(this);"><i
-                                    class="fa fa-trash"></i></button>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"/>
+                            </div>
                         </td>
                         <td class="text-left">
-                            <button class="btn btn-success" onclick="changeClass(this);"><i
-                                    class="fa fa-trash"></i></button>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"/>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#modificarProducte">Modificar</button>
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                        data-bs-target="#borrarProducte">Eliminar
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr class="text-center align-middle">
+                        <td class="img"><img src="https://dummyimage.com/50x50/55595c/fff"/></td>
+                        <td>Slamm Subway</td>
+                        <td>Slamm</td>
+                        <td>Elèctric</td>
+                        <td class="text-right">XL</td>
+                        <td class="text-right">Negre</td>
+                        <td>25-30 km</td>
+                        <td>0%</td>
+                        <td>8</td>
+                        <td class="text-right">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"/>
+                            </div>
+                        </td>
+                        <td class="text-left">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" role="switch"/>
+                            </div>
                         </td>
                         <td>
                             <div class="btn-group">
@@ -690,9 +860,51 @@
         </div>
     </div>
 </div>
+<footer>
+    <div class="row py-3 bg-dark justify-content-around border-bottom border-light border-2">
+        <div class="col-md-3 col-12 my-3" id="map"></div>
+        <div class="col-md-3 col-5 my-3">
+            <h3 class="h5 mb-1 text-decoration-underline text-white">Coneixemos</h3>
+            <p class="small mb-1 text-white">Illes Balears</p>
+            <p class="small mb-1 text-white">C/Cami de s'es flors nº50, 07550</p>
+            <p class="small mb-1 text-white">Tel. Fixo: 971567812</p>
+            <p class="small mb-1 text-white">Tel. Movil: 667485213</p>
+            <p class="small mb-1 text-white">Email: fanbicis@gmail.com</p>
+            <a class="text-white text-decoration-none" href="/sobre-nosaltres" target="_blank"><p class="small mb-1">De nosaltres</p></a>
+        </div>
+        <div class="col-md-3 col-5 my-3">
+            <h3 class="h5 mb-1 text-decoration-underline text-white">Enllaços d'interes</h3>
+            <a class="text-white" href="https://www.ferrerhotels.com/travellost/rutas-ciclistas-de-mallorca/" target="_blank"><p class="small mb-1">Rutes de mallorca</p></a>
+            <a class="text-white" href="https://es.wikiloc.com/rutas/descenso-mtb/espana/illes-balears" target="_blank"><p class="small mb-1">Rutes de descens</p></a>
+            <a class="text-white" href="http://localhost:63342/Backend-private/static/html/index.html?_ijt=n0opdfa6u4d0htjd4edm6l440i&_ij_reload=RELOAD_ON_SAVE" target="_blank"><p class="small mb-1">Quina bici et va millor</p></a>
+            <a class="text-white" href="https://revista.dgt.es/es/educacion-formacion/reportajes/2021/0930-Normas-ciclistas.shtml" target="_blank"><p class="small mb-1">Normes al volant</p></a>
+            <a class="text-white" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Gastronomia damunt rodes</p></a>
+            <a class="text-white" href="https://www.hotelaya.com/blog-private/restaurantes-para-ciclistas-mallorca" target="_blank"><p class="small mb-1">Coses interesants</p></a>
+        </div>
+    </div>
+    <div class="row bg-footer pt-3">
+        <div class="col-12 text-center">
+            <img src="/img/BikeTour250x141.webp" width="125" height="60" alt="...">
+        </div>
+        <div class="col-12 text-center">
+            <p class="text-white"> Copyright © 2015-2022 Mallorca Bike Tour</p>
+        </div>
+    </div>
+</footer>
 
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRLXnIEY1UHbKR-j8cOCKYQ3Ouk2NJ7ao&callback=initMap&v=weekly" async></script>
 <script src="/js/ProductesModificarProductes.js"></script>
 <script src="/js/bootstrap.bundle.js"></script>
+<script>
+    let map;
+
+    function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+            center: { lat: 39.71358, lng: 3.46076 },
+            zoom: 20,
+        });
+    }
+</script>
 </body>
 
 </html>
